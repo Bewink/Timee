@@ -8,7 +8,7 @@ switch($page) {
     case '':
     case 'home':
         $tpl = new Template($tplpath);
-        $tpl->setTitle('| Home');
+        $tpl->setTitle('| Accueil');
         $tpl->addStyle('default.css');
 
         $tpl->render('index.php');
