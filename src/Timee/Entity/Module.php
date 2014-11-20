@@ -4,12 +4,14 @@ namespace src\Timee\Entity;
 
 use vendors\BeFeW\Entity as Entity;
 
-class UE extends Entity {
+class Module extends Entity {
     protected $lib;
-    protected $module;
+    protected $promo;
+    protected $teachingUnit;
 
     public function __construct($id) {
         parent::__construct($id);
-        $this->registerLink('module');
+        $this->registerLink('promo');
+        $this->registerLink('teachingUnit');
     }
 }
