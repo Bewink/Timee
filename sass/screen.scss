@@ -1,0 +1,103 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@import "compass/reset";
+@import "compass";
+
+$primary-color: hsla(0, 0, 0, 0.3);
+
+body {
+    padding-bottom: 50px;
+    font-family: "Source Code Pro";
+}
+
+table {
+    width: 90%;
+    margin: auto;
+    tr {
+        .test {
+            color: black;
+            padding: 50px 0 50px 0;
+            text-align: center;
+            padding-left: 60px;
+        }
+    }
+    th {
+        color: $primary-color;
+        text-align: left;
+        padding: 0 0 10px 10px;
+
+        &.hours {
+            width: 60px;
+            padding: 0;
+            text-align: center;
+        }
+        hr{
+            width: 50%;
+            color: $primary-color;
+        }
+    }
+    td {
+        text-align: center;
+        border: 1px solid $primary-color;
+        height: 220px;
+        font-size: 1.3rem;
+        position: relative;
+        h3 {
+            position: absolute;
+            top: 15px;
+            left: 7px;
+            text-align: left;
+        }
+        p {
+            font-size: 0.8rem;
+            text-align: left;
+            padding-left: 20px;
+        }
+        div:first-of-type {
+            background-color: #ced6e5;
+            display: table;
+            text-align: center;
+            width: 35px;
+            height: 35px;
+            top: 10px;
+            left: inherit;
+            right: 10px;
+            p:first-of-type {
+                color: #ffffff;
+                padding: inherit;
+                text-align: center;
+                display: table-cell;
+                font-size: 0.8rem;
+                vertical-align: middle;
+            }
+        }
+        div {
+            display: block;
+            font-size: 0.7rem;
+            position: absolute;
+            text-align: left;
+            bottom: 10px;
+            left: 10px;
+            p {
+                padding: inherit;
+            }
+            p:first-of-type {
+                color: $primary-color;
+            }
+        }
+        div:last-of-type {
+            left: inherit;
+            right: 10px;
+        }
+    }
+    .test2 {
+        background-color: #e5eeff;
+    }
+    .test3 {
+        background-color: #fbfce7;
+    }
+}
+
+

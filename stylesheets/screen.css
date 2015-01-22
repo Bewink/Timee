@@ -1,0 +1,175 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 10, ../sass/screen.scss */
+body {
+  padding-bottom: 50px;
+  font-family: "Source Code Pro";
+}
+
+/* line 15, ../sass/screen.scss */
+table {
+  width: 90%;
+  margin: auto;
+}
+/* line 19, ../sass/screen.scss */
+table tr .test {
+  color: black;
+  padding: 50px 0 50px 0;
+  text-align: center;
+  padding-left: 60px;
+}
+/* line 26, ../sass/screen.scss */
+table th {
+  color: rgba(0, 0, 0, 0.3);
+  text-align: left;
+  padding: 0 0 10px 10px;
+}
+/* line 31, ../sass/screen.scss */
+table th.hours {
+  width: 60px;
+  padding: 0;
+  text-align: center;
+}
+/* line 36, ../sass/screen.scss */
+table th hr {
+  width: 50%;
+  color: rgba(0, 0, 0, 0.3);
+}
+/* line 41, ../sass/screen.scss */
+table td {
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  height: 220px;
+  font-size: 1.3rem;
+  position: relative;
+}
+/* line 47, ../sass/screen.scss */
+table td h3 {
+  position: absolute;
+  top: 15px;
+  left: 7px;
+  text-align: left;
+}
+/* line 53, ../sass/screen.scss */
+table td p {
+  font-size: 0.8rem;
+  text-align: left;
+  padding-left: 20px;
+}
+/* line 58, ../sass/screen.scss */
+table td div:first-of-type {
+  background-color: #ced6e5;
+  display: table;
+  text-align: center;
+  width: 35px;
+  height: 35px;
+  top: 10px;
+  left: inherit;
+  right: 10px;
+}
+/* line 67, ../sass/screen.scss */
+table td div:first-of-type p:first-of-type {
+  color: #ffffff;
+  padding: inherit;
+  text-align: center;
+  display: table-cell;
+  font-size: 0.8rem;
+  vertical-align: middle;
+}
+/* line 76, ../sass/screen.scss */
+table td div {
+  display: block;
+  font-size: 0.7rem;
+  position: absolute;
+  text-align: left;
+  bottom: 10px;
+  left: 10px;
+}
+/* line 83, ../sass/screen.scss */
+table td div p {
+  padding: inherit;
+}
+/* line 86, ../sass/screen.scss */
+table td div p:first-of-type {
+  color: rgba(0, 0, 0, 0.3);
+}
+/* line 90, ../sass/screen.scss */
+table td div:last-of-type {
+  left: inherit;
+  right: 10px;
+}
+/* line 95, ../sass/screen.scss */
+table .test2 {
+  background-color: #e5eeff;
+}
+/* line 98, ../sass/screen.scss */
+table .test3 {
+  background-color: #fbfce7;
+}
