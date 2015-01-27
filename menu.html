@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="css/main.css">
+	<!--[if lt IE 9]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
+</head>
+
+<body>
+
+  <header>
+
+    <div class="header-row">
+      <div class="desc">
+
+        <div class="page f-left">
+          <span>Page</span>
+          <p>Edition</p>
+        </div>
+
+        <div class="user f-right">
+          <span>Login</span>
+          <p>Oscar Wild</p>
+        </div>
+
+      </div>
+    </div>
+
+  </header>
+
+
+  <!-- Sidemenu -->
+
+  <aside id="sideMenu" class="transition-all">
+  <i id="showMenu" class="close-menu transition-all">XXX</i>
+    <ul>
+      <li class="bold">Menu</li>
+      <li><a href="#">Profile</a></li>
+      <li><a href="#">Editer</a></li>
+      <li><a href="#">Etudiants</a></li>
+      <li><a href="#">Parametres</a></li>
+      <li><a href="#">Deconnection</a></li>
+    </ul>
+  </aside>
+
+  <!-- Sidemenu end -->
+
+
+
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/jquery-1.10.1.min.js"><\/script>')</script>
+	<script src="js/main.js"></script>
+	
+<script type="text/javascript">
+    // Afficher/masquer la sidebar
+  $("#showMenu").click(function(){
+    $("#sideMenu").toggleClass('isActive');
+  });
+</script>
+
+</body>
+</html>

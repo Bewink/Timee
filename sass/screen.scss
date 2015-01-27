@@ -12,15 +12,37 @@ body {
     font-family: "Source Code Pro";
 }
 
+.planning-container{
+  max-width: 960px;
+  margin: auto;
+}
+
 table {
-    width: 90%;
     margin: auto;
+
+    .days{
+        font-size: 13px;
+    }
+
+    h3{
+        font-size: 16px;
+    }
+
+    .description{
+        font-size: 11px;
+        font-style: italic;
+        text-align: left;
+        padding-left: 7px;
+        max-width: 136px;
+    }
+
     tr {
-        .test {
+        .am-pm {
             color: black;
-            padding: 50px 0 50px 0;
+            padding: 25px 0;
             text-align: center;
             padding-left: 60px;
+            font-size: 11px
         }
     }
     th {
@@ -32,6 +54,7 @@ table {
             width: 60px;
             padding: 0;
             text-align: center;
+            font-size: 10px;
         }
         hr{
             width: 50%;
@@ -40,8 +63,8 @@ table {
     }
     td {
         text-align: center;
-        border: 1px solid $primary-color;
-        height: 220px;
+        border: 1px solid #d8d8d8;
+        height: 150px;
         font-size: 1.3rem;
         position: relative;
         h3 {
@@ -50,17 +73,12 @@ table {
             left: 7px;
             text-align: left;
         }
-        p {
-            font-size: 0.8rem;
-            text-align: left;
-            padding-left: 20px;
-        }
-        div:first-of-type {
-            background-color: #ced6e5;
+        .module {
+            background-color: hsla(0, 0%, 0%, 0.1);
             display: table;
             text-align: center;
-            width: 35px;
-            height: 35px;
+            width: 30px;
+            height: 30px;
             top: 10px;
             left: inherit;
             right: 10px;
@@ -69,7 +87,7 @@ table {
                 padding: inherit;
                 text-align: center;
                 display: table-cell;
-                font-size: 0.8rem;
+                font-size: 10px;
                 vertical-align: middle;
             }
         }
