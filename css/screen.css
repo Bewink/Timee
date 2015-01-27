@@ -272,10 +272,12 @@ table th.hours {
 }
 /* line 40, ../sass/_timetable.scss */
 table th hr {
-  width: 50%;
-  color: rgba(0, 0, 0, 0.3);
+  border: none;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 25px;
 }
-/* line 45, ../sass/_timetable.scss */
+/* line 47, ../sass/_timetable.scss */
 table td {
   text-align: center;
   border: 1px solid #d8d8d8;
@@ -283,14 +285,14 @@ table td {
   font-size: 1.3rem;
   position: relative;
 }
-/* line 51, ../sass/_timetable.scss */
+/* line 53, ../sass/_timetable.scss */
 table td h3 {
   position: absolute;
   top: 15px;
   left: 7px;
   text-align: left;
 }
-/* line 57, ../sass/_timetable.scss */
+/* line 59, ../sass/_timetable.scss */
 table td .module {
   background-color: rgba(0, 0, 0, 0.1);
   display: table;
@@ -301,7 +303,7 @@ table td .module {
   left: inherit;
   right: 10px;
 }
-/* line 66, ../sass/_timetable.scss */
+/* line 68, ../sass/_timetable.scss */
 table td .module p:first-of-type {
   color: #ffffff;
   padding: inherit;
@@ -310,7 +312,7 @@ table td .module p:first-of-type {
   font-size: 10px;
   vertical-align: middle;
 }
-/* line 75, ../sass/_timetable.scss */
+/* line 77, ../sass/_timetable.scss */
 table td div {
   display: block;
   font-size: 0.7rem;
@@ -319,24 +321,24 @@ table td div {
   bottom: 10px;
   left: 10px;
 }
-/* line 82, ../sass/_timetable.scss */
+/* line 84, ../sass/_timetable.scss */
 table td div p {
   padding: inherit;
 }
-/* line 85, ../sass/_timetable.scss */
+/* line 87, ../sass/_timetable.scss */
 table td div p:first-of-type {
   color: rgba(0, 0, 0, 0.3);
 }
-/* line 89, ../sass/_timetable.scss */
+/* line 91, ../sass/_timetable.scss */
 table td div:last-of-type {
   left: inherit;
   right: 10px;
 }
-/* line 94, ../sass/_timetable.scss */
+/* line 96, ../sass/_timetable.scss */
 table .test2 {
   background-color: #e5eeff;
 }
-/* line 97, ../sass/_timetable.scss */
+/* line 99, ../sass/_timetable.scss */
 table .test3 {
   background-color: #fbfce7;
 }

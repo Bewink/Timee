@@ -38,8 +38,10 @@ table {
             font-size: 10px;
         }
         hr {
-            width: 50%;
-            color: $primary-color;
+            border : none;
+            height: 1px;
+            background-color : $primary-color;
+            width: 25px;
         }
     }
     td {
