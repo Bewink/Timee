@@ -63,34 +63,34 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 6, ../sass/screen.scss */
+/* line 3, ../sass/screen.scss */
 body {
   padding-bottom: 50px;
   font-family: "Source Code Pro";
 }
 
-/* line 11, ../sass/screen.scss */
+/* line 8, ../sass/screen.scss */
 .bold {
   font-weight: bold;
 }
 
-/* line 15, ../sass/screen.scss */
+/* line 12, ../sass/screen.scss */
 .planning-container {
   max-width: 960px;
   margin: auto;
 }
 
-/* line 20, ../sass/screen.scss */
+/* line 17, ../sass/screen.scss */
 .f-left {
   float: left;
 }
 
-/* line 24, ../sass/screen.scss */
+/* line 21, ../sass/screen.scss */
 .f-right {
   float: right;
 }
 
-/* line 28, ../sass/screen.scss */
+/* line 25, ../sass/screen.scss */
 h1 {
   font-size: 14px;
   font-weight: 400;
