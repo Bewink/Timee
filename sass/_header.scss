@@ -1,0 +1,41 @@
+header {
+    background-color: #FFF;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 75px;
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+    .header-row {
+        max-width: 960px;
+        padding: 0 75px;
+        height: 100%;
+        margin: auto;
+        vertical-align: middle;
+    }
+
+    .page, .user {
+        display: inline;
+    }
+
+    .user {
+        margin-right: 30px;
+    }
+
+    span {
+        display: block;
+        color: $primary-color;
+        font-size: 11px;
+        padding-top: 20px;
+    }
+    p {
+        margin: 0;
+        font-size: 14px;
+        text-transform: uppercase;
+        margin-top: 5px;
+        padding-top: 3px;
+        letter-spacing: 2px;
+        padding-bottom: 20px;
+    }
+}

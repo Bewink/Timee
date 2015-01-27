@@ -1,0 +1,28 @@
+.container-login {
+    height: 250px;
+    width: 160px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+
+    input {
+        border: 1px solid $primary-color;
+        padding: 5px;
+        font-family: 'Source Code Pro';
+    }
+
+    .submit input {
+        background-color: #fff;
+        border: none;
+        text-transform: uppercase;
+    }
+
+    .login-help {
+        font-size: 10px;
+        color: $primary-color;
+    }
+}

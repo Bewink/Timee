@@ -1,0 +1,55 @@
+aside {
+    width: 240px;
+    height: 100%;
+    position: absolute;
+    left: -240px;
+    top: 0;
+    background: none;
+    text-transform: uppercase;
+    letter-spacing: 1pt;
+    font-size: 13px;
+
+    i {
+        position: absolute;
+        left: 260px;
+        top: 30px;
+        cursor: pointer;
+    }
+
+    ul {
+        margin-top: 0;
+
+        li {
+            padding: 5px 10px;
+            margin: 5px 0;
+
+            a {
+                display: inline-block;
+                width: 100%;
+                padding: 15px 0;
+            }
+        }
+
+        .bold {
+            margin: 30px 0;
+        }
+
+        .close-menu {
+            position: absolute;
+            right: 30px;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.isActive {
+    left: 0;
+    background-color: hsla(360, 100%, 100%, 0.8);
+}
+
+.transition-all {
+    transition: All 0.35s ease-out;
+}
