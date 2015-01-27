@@ -180,20 +180,13 @@ header{
 	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 
 	.header-row{
-		width: 95%;
+		max-width: 960px;
 		padding: 0 75px;
 		height: 100%;
-		position: relative;
 		max-width: 1220px;
 		margin: auto;
 		vertical-align: middle;
 	}
-
-	.desc{
-		display: inline;
-		width: 91.66667%;
-		padding: 0;
-		float: left;
 
 		.page, .user{
 			display: inline;
