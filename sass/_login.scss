@@ -9,10 +9,15 @@
     left: 0;
     text-align: center;
 
+    h1{
+        margin-bottom: 15px;
+    }
+
     input {
         border: 1px solid $primary-color;
         padding: 5px;
         font-family: 'Source Code Pro';
+        margin: 5px 0;
     }
 
     .submit input {
