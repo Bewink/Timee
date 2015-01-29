@@ -407,17 +407,15 @@ table .test3 {
 }
 
 /* line 2, ../sass/_addStudent.scss */
-.head_wrapper {
-  width: auto;
-  height: auto;
-  padding: 50px 0 20px 250px;
+.head {
+  padding: 20px 0;
+}
+/* line 4, ../sass/_addStudent.scss */
+.head .sorting_title {
+  font-size: 14px;
 }
 /* line 6, ../sass/_addStudent.scss */
-.head_wrapper .sorting_title {
-  font-size: 14pt;
-}
-/* line 8, ../sass/_addStudent.scss */
-.head_wrapper .sorting_title #toggle_button {
+.head .sorting_title #toggle_button {
   display: inline-block;
   width: 0;
   height: 0;
@@ -426,135 +424,133 @@ table .test3 {
   border-left: 7px solid transparent;
 }
 
-/* line 19, ../sass/_addStudent.scss */
+/* line 17, ../sass/_addStudent.scss */
 .sorting {
   display: inline-block;
   vertical-align: top;
   margin-top: 15px;
 }
 
-/* line 25, ../sass/_addStudent.scss */
+/* line 23, ../sass/_addStudent.scss */
 .sorting2 {
   margin-left: 70px;
 }
 
-/* line 25, ../sass/_addStudent.scss */
+/* line 23, ../sass/_addStudent.scss */
 .sorting3 {
   margin-left: 70px;
 }
 
-/* line 29, ../sass/_addStudent.scss */
+/* line 27, ../sass/_addStudent.scss */
 .sort_title {
-  font-size: 10pt;
+  font-size: 10px;
   color: rgba(0, 0, 0, 0.3);
   margin-bottom: 5px;
 }
 
-/* line 34, ../sass/_addStudent.scss */
+/* line 32, ../sass/_addStudent.scss */
 .sort_item {
-  font-size: 12pt;
+  font-size: 12px;
 }
 
-/* line 38, ../sass/_addStudent.scss */
-.main_wrapper {
+/* line 36, ../sass/_addStudent.scss */
+.main_content {
   background-color: #eeeeee;
-  padding: 50px 0 50px 0;
+  padding: 40px 0;
 }
-/* line 41, ../sass/_addStudent.scss */
-.main_wrapper .main_table {
+/* line 39, ../sass/_addStudent.scss */
+.main_content .main_table {
   width: 80%;
   margin: auto;
 }
-/* line 44, ../sass/_addStudent.scss */
-.main_wrapper .main_table table {
+/* line 42, ../sass/_addStudent.scss */
+.main_content .main_table table {
   width: 100%;
   border: none;
 }
-/* line 47, ../sass/_addStudent.scss */
-.main_wrapper .main_table table th:first-of-type {
+/* line 45, ../sass/_addStudent.scss */
+.main_content .main_table table th:first-of-type {
   width: 30px;
 }
-/* line 50, ../sass/_addStudent.scss */
-.main_wrapper .main_table table th {
+/* line 48, ../sass/_addStudent.scss */
+.main_content .main_table table th {
   border-bottom: 1px solid #bdbdbd;
-  font-size: 9pt;
+  font-size: 9px;
   padding-left: 0;
 }
-/* line 55, ../sass/_addStudent.scss */
-.main_wrapper .main_table table td {
+/* line 53, ../sass/_addStudent.scss */
+.main_content .main_table table td {
   height: auto;
   border: none;
   text-align: left;
-  font-size: 11pt;
+  font-size: 11px;
   vertical-align: top;
   padding-top: 20px;
 }
 
-/* line 67, ../sass/_addStudent.scss */
+/* line 65, ../sass/_addStudent.scss */
 .adding_form {
   width: 80%;
   margin: 50px auto auto auto;
 }
-/* line 70, ../sass/_addStudent.scss */
+/* line 68, ../sass/_addStudent.scss */
 .adding_form #title_form {
-  width: 95%;
-  margin: auto;
-  font-size: 14pt;
+  font-size: 14px;
   margin-bottom: 20px;
   padding-left: 10px;
+  color: #000;
 }
-/* line 77, ../sass/_addStudent.scss */
+/* line 74, ../sass/_addStudent.scss */
 .adding_form form {
-  width: 95%;
   margin: auto;
 }
-/* line 80, ../sass/_addStudent.scss */
+/* line 76, ../sass/_addStudent.scss */
 .adding_form form .input_group {
   display: inline-block;
   margin-bottom: 10px;
   vertical-align: top;
 }
-/* line 84, ../sass/_addStudent.scss */
+/* line 80, ../sass/_addStudent.scss */
 .adding_form form .input_group label {
   display: none;
   margin-bottom: 5px;
-  font-size: 11pt;
+  font-size: 11px;
   color: rgba(0, 0, 0, 0.3);
 }
-/* line 90, ../sass/_addStudent.scss */
+/* line 86, ../sass/_addStudent.scss */
 .adding_form form .input_group input {
   width: 100px;
 }
-/* line 93, ../sass/_addStudent.scss */
+/* line 89, ../sass/_addStudent.scss */
 .adding_form form .input_group #student_mail {
   width: auto;
 }
-/* line 96, ../sass/_addStudent.scss */
+/* line 92, ../sass/_addStudent.scss */
 .adding_form form .input_group #student_pass {
   width: auto;
 }
-/* line 99, ../sass/_addStudent.scss */
+/* line 95, ../sass/_addStudent.scss */
 .adding_form form .input_group #student_dut {
   width: auto;
 }
-/* line 102, ../sass/_addStudent.scss */
+/* line 98, ../sass/_addStudent.scss */
 .adding_form form .input_group select {
   width: auto;
 }
-/* line 106, ../sass/_addStudent.scss */
+/* line 102, ../sass/_addStudent.scss */
 .adding_form form .interact_buttons {
   display: inline-block;
 }
-/* line 108, ../sass/_addStudent.scss */
+/* line 104, ../sass/_addStudent.scss */
 .adding_form form .interact_buttons input {
   display: block;
   font-family: "Source Code Pro";
-  font-size: 11pt;
+  font-size: 11px;
   padding: 2px 35px 2px 35px;
   background-color: #FFFFFF;
   border: 1px solid rgba(0, 0, 0, 0.3);
 }
-/* line 116, ../sass/_addStudent.scss */
+/* line 112, ../sass/_addStudent.scss */
 .adding_form form .interact_buttons input:first-of-type {
   margin-bottom: 10px;
 }
