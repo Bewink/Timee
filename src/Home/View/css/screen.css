@@ -1,4 +1,4 @@
-/* line 5, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,45 +20,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -342,4 +342,157 @@ table .test2 {
 /* line 99, ../sass/_timetable.scss */
 table .test3 {
   background-color: #fbfce7;
+}
+
+/* line 2, ../sass/_addStudent.scss */
+.head_wrapper {
+  width: auto;
+  height: auto;
+  padding: 50px 0 20px 250px;
+}
+/* line 6, ../sass/_addStudent.scss */
+.head_wrapper .sorting_title {
+  font-size: 14pt;
+}
+/* line 8, ../sass/_addStudent.scss */
+.head_wrapper .sorting_title #toggle_button {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 7px solid #d8d8d8;
+  border-right: 7px solid transparent;
+  border-left: 7px solid transparent;
+}
+
+/* line 19, ../sass/_addStudent.scss */
+.sorting {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 15px;
+}
+
+/* line 25, ../sass/_addStudent.scss */
+.sorting2 {
+  margin-left: 70px;
+}
+
+/* line 25, ../sass/_addStudent.scss */
+.sorting3 {
+  margin-left: 70px;
+}
+
+/* line 29, ../sass/_addStudent.scss */
+.sort_title {
+  font-size: 10pt;
+  color: rgba(0, 0, 0, 0.3);
+  margin-bottom: 5px;
+}
+
+/* line 34, ../sass/_addStudent.scss */
+.sort_item {
+  font-size: 12pt;
+}
+
+/* line 38, ../sass/_addStudent.scss */
+.main_wrapper {
+  background-color: #eeeeee;
+  padding: 50px 0 50px 0;
+}
+/* line 41, ../sass/_addStudent.scss */
+.main_wrapper .main_table {
+  width: 80%;
+  margin: auto;
+}
+/* line 44, ../sass/_addStudent.scss */
+.main_wrapper .main_table table {
+  width: 100%;
+  border: none;
+}
+/* line 47, ../sass/_addStudent.scss */
+.main_wrapper .main_table table th:first-of-type {
+  width: 30px;
+}
+/* line 50, ../sass/_addStudent.scss */
+.main_wrapper .main_table table th {
+  border-bottom: 1px solid #bdbdbd;
+  font-size: 9pt;
+  padding-left: 0;
+}
+/* line 55, ../sass/_addStudent.scss */
+.main_wrapper .main_table table td {
+  height: auto;
+  border: none;
+  text-align: left;
+  font-size: 11pt;
+  vertical-align: top;
+  padding-top: 20px;
+}
+
+/* line 67, ../sass/_addStudent.scss */
+.adding_form {
+  width: 80%;
+  margin: 50px auto auto auto;
+}
+/* line 70, ../sass/_addStudent.scss */
+.adding_form #title_form {
+  width: 95%;
+  margin: auto;
+  font-size: 14pt;
+  margin-bottom: 20px;
+  padding-left: 10px;
+}
+/* line 77, ../sass/_addStudent.scss */
+.adding_form form {
+  width: 95%;
+  margin: auto;
+}
+/* line 80, ../sass/_addStudent.scss */
+.adding_form form .input_group {
+  display: inline-block;
+  margin-bottom: 10px;
+  vertical-align: top;
+}
+/* line 84, ../sass/_addStudent.scss */
+.adding_form form .input_group label {
+  display: none;
+  margin-bottom: 5px;
+  font-size: 11pt;
+  color: rgba(0, 0, 0, 0.3);
+}
+/* line 90, ../sass/_addStudent.scss */
+.adding_form form .input_group input {
+  width: 100px;
+}
+/* line 93, ../sass/_addStudent.scss */
+.adding_form form .input_group #student_mail {
+  width: auto;
+}
+/* line 96, ../sass/_addStudent.scss */
+.adding_form form .input_group #student_pass {
+  width: auto;
+}
+/* line 99, ../sass/_addStudent.scss */
+.adding_form form .input_group #student_dut {
+  width: auto;
+}
+/* line 102, ../sass/_addStudent.scss */
+.adding_form form .input_group select {
+  width: auto;
+}
+/* line 106, ../sass/_addStudent.scss */
+.adding_form form .interact_buttons {
+  display: inline-block;
+}
+/* line 108, ../sass/_addStudent.scss */
+.adding_form form .interact_buttons input {
+  display: block;
+  font-family: "Source Code Pro";
+  font-size: 11pt;
+  padding: 2px 35px 2px 35px;
+  background-color: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+/* line 116, ../sass/_addStudent.scss */
+.adding_form form .interact_buttons input:first-of-type {
+  margin-bottom: 10px;
 }

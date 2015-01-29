@@ -1,0 +1,121 @@
+
+.head_wrapper{
+    width: auto;
+    height: auto;
+    padding: 50px 0 20px 250px;
+    .sorting_title{
+        font-size: 14pt;
+        #toggle_button{
+            display: inline-block;
+            width: 0;
+            height: 0;
+            border-top: 7px solid #d8d8d8;
+            border-right: 7px solid transparent;
+            border-left: 7px solid transparent ;
+        }
+    }
+}
+
+.sorting{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 15px;
+}
+@for $i from 2 through 3{
+    .sorting#{$i}{
+        margin-left: 70px;
+    }
+}
+.sort_title{
+    font-size: 10pt;
+    color: $primary-color;
+    margin-bottom: 5px;
+}
+.sort_item{
+    font-size: 12pt;
+}
+
+.main_wrapper{
+    background-color: #eeeeee;
+    padding: 50px 0 50px 0;
+    .main_table{
+        width: 80%;
+        margin: auto;
+        table{
+            width: 100%;
+            border: none;
+            th:first-of-type{
+                width: 30px;
+            }
+            th{
+                border-bottom: 1px solid #bdbdbd;
+                font-size: 9pt;
+                padding-left: 0;
+            }
+            td{
+                height: auto;
+                border: none;
+                text-align: left;
+                font-size: 11pt;
+                vertical-align: top;
+                padding-top: 20px;
+            }
+        }
+    }
+}
+
+.adding_form{
+    width: 80%;
+    margin: 50px auto auto auto;
+    #title_form{
+        width: 95%;
+        margin: auto;
+        font-size: 14pt;
+        margin-bottom: 20px;
+        padding-left: 10px;
+    }
+    form{
+        width: 95%;
+        margin: auto;
+        .input_group{
+            display: inline-block;
+            margin-bottom: 10px;
+            vertical-align: top;
+            label{
+                display: none;
+                margin-bottom: 5px;
+                font-size: 11pt;
+                color: $primary-color;
+            }
+            input{
+                width: 100px;
+            }
+            #student_mail{
+                width: auto;
+            }
+            #student_pass{
+                width: auto;
+            }
+            #student_dut{
+                width: auto;
+            }
+            select{
+                width: auto;
+            }
+        }
+        .interact_buttons{
+            display: inline-block;
+            input{
+                display: block;
+                font-family: "Source Code Pro";
+                font-size: 11pt;
+                padding: 2px 35px 2px 35px;
+                background-color: #FFFFFF;
+                border: 1px solid $primary-color;
+            }
+            input:first-of-type{
+                margin-bottom: 10px;
+            }
+        }
+    }
+}

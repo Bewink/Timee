@@ -48,7 +48,9 @@ class HomeController extends Controller {
         }
     }
 
-    public function etudiant() {
+    public function etudiantAction() {
+        $this->template->addCSS('screen.css');
+        $this->template->addJS('main.js', false);
         $this->template->render('addStudent.html.twig');
     }
 
