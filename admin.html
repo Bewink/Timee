@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Formulaires</title>
+    <link rel="stylesheet" href="css/screen.css" />
+    <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
+    <style>
+        h1{
+            padding: 50px 0 0 100px;
+            font-size: 38px;
+        }
+        h2{
+            font-size: 20px;
+            margin-bottom: 20px;
+            padding: 5px;
+            background-color: rgba(255, 157, 31, 0.64);
+            width: 320px;
+            text-align: center;
+        }
+        form input{
+            display: block;
+        }
+        label{
+            display: block;
+        }
+        .container_form{
+            margin: 100px 0 0 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Remplissage formulaires</h1>
+    <div id="add_student" class="container_form">
+        <h2>Renseignements étudiant</h2>
+        <form action="#" method="post">
+            <label for="student_td">Numéro TD étudiant</label>
+            <select name="student_td" id="student_td">
+                <option>1</option>
+                <option>2</option>
+            </select>
+            <label for="student_tp">Numéro TP étudiant</label>
+            <select name="student_tp" id="student_tp">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+            </select>
+            <label for="student_sem">Semestre</label>
+            <select name="student_sem" id="student_sem">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+            </select>
+            <label for="student_dut">DUT étudiant</label>
+            <input name="student_dut" id="student_dut" type="text" />
+            <label for="student_login">Login étudiant</label>
+            <input name="student_login" id="student_login" type="text" />
+            <label for="student_pass">Mot de passe étudiant</label>
+            <input name="student_pass" id="student_pass" type="password" />
+            <label for="student_lastname">Nom</label>
+            <input name="student_lastname" id="student_lastname" type="text" />
+            <label for="student_firstname">Prénom</label>
+            <input name="student_firstname" id="student_firstname" type="text" />
+            <label for="student_mail">Email étudiant</label>
+            <input name="student_mail" id="student_mail" type="text" />
+            <input type="submit" />
+            <input type="reset" />
+        </form>
+    </div>
+    <div id="add_teacher" class="container_form">
+        <h2>Renseignements enseignant</h2>
+        <form action="#" method="post">
+            <label for="teacher_cd_status">Statut enseignant</label>
+            <select name="teacher_cd_status" id="teacher_cd_status">
+                <option>1</option>
+                <option>2</option>
+            </select>
+            <label for="teacher_login">Login enseignant</label>
+            <input type="text" name="teacher_login" id="teacher_login" />
+            <label for="teacher_pass">Mot de passe enseignant</label>
+            <input name="teacher_pass" id="teacher_pass" type="text"/>
+            <label for="teacher_lastname">Nom</label>
+            <input name="teacher_lastname" id="teacher_lastname" type="text" />
+            <label for="teacher_firstname">Prénom</label>
+            <input name="teacher_firstname" id="teacher_firstname" type="text" />
+            <label for="teacher_mail">Email enseignant</label>
+            <input name="teacher_mail" id="teacher_mail" type="text" />
+            <input type="submit"/>
+            <input type="reset"/>
+        </form>
+    </div>
+    <div id="add_dut" class="container_form">
+        <h2>Renseignements DUT</h2>
+        <form action="#" method="post">
+            <label for="dut_cd">Code DUT</label>
+            <select name="dut_cd" id="dut_cd">
+                <option>EY33</option>
+                <option>EZ75</option>
+            </select>
+            <label for="dut_name">Nom DUT</label>
+            <input name="dut_name" id="dut_name" type="text" />
+            <input type="submit"/>
+            <input type="reset"/>
+        </form>
+    </div>
+    <div id="add_UE" class="container_form">
+        <h2>Renseignements UE</h2>
+        <form action="#" method="post">
+            <label for="UE_cd">Code UE</label>
+            <select name="UE_cd" id="UE_cd">
+                <option>1</option>
+                <option>2</option>
+            </select>
+            <label for="UE_name">Nom UE</label>
+            <input name="UE_name" id="UE_name" type="text" />
+            <input type="submit"/>
+            <input type="reset"/>
+        </form>
+    </div>
+    <div id="add_module" class="container_form">
+        <h2>Renseignements module</h2>
+        <form action="#" method="post">
+            <label for="module_cd">Code UE</label>
+            <select name="module_cd" id="module_cd">
+                <option>M24</option>
+                <option>M32</option>
+            </select>
+            <label for="UE_link">UE rattachée</label>
+            <input name="UE_link" id="UE_link" type="text" value="UE1" />
+            <input type="submit"/>
+            <input type="reset"/>
+        </form>
+    </div>
+    <div id="add_room" class="container_form">
+        <h2>Renseignements salle</h2>
+        <form action="#" method="post">
+            <label for="room_cd">Code Salle</label>
+            <select name="room_cd" id="room_cd">
+                <option>lk232</option>
+                <option>pl124</option>
+            </select>
+            <label for="room_name">Nom de la salle</label>
+            <input name="room_name" id="room_name" type="text" />
+            <label for="room_cap">Capacité de la salle</label>
+            <input name="room_cap" id="room_cap" type="text" />
+            <label for="room_nb_comp">Nombre de postes de la salle</label>
+            <input name="room_nb_comp" id="room_nb_comp" type="text" />
+            <input type="submit"/>
+            <input type="reset"/>
+        </form>
+    </div>
+    <div id="add_sem" class="container_form">
+        <h2>Renseignements semestre</h2>
+        <form action="#" method="post">
+            <label for="sem_cd">Code semestre</label>
+            <select name="sem_cd" id="sem_cd">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+            </select>
+            <label for="dut_link">DUT rattaché</label>
+            <input name="dut_link" id="dut_link" type="text" value="EZ75" />
+            <label for="sem_name">Nom du semestre</label>
+            <input name="sem_name" id="sem_name" type="text" />
+            <input type="submit"/>
+            <input type="reset"/>
+        </form>
+    </div>
+    <div id="add_status" class="container_form">
+        <h2>Renseignements statut</h2>
+        <form action="#" method="post">
+            <label for="status_cd">Code statut</label>
+            <select name="status_cd" id="status_cd">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+            </select>
+            <label for="status_name">Nom du statut</label>
+            <input name="status_name" id="status_name" type="text" value="EZ75" />
+            <label for="status_hours">Nombre d'heures</label>
+            <input name="status_hours" id="status_hours" type="text" />
+            <input type="submit"/>
+            <input type="reset"/>
+        </form>
+    </div>
+    <div id="add_TD" class="container_form">
+        <h2>Renseignements TD</h2>
+        <form action="#" method="post">
+            <label for="TD_cd">Code TD</label>
+            <select name="TD_cd" id="TD_cd">
+                <option>1</option>
+                <option>2</option>
+            </select>
+            <label for="TD_name">Nom du TD</label>
+            <input name="TD_name" id="TD_name" type="text" />
+            <input type="submit"/>
+            <input type="reset"/>
+        </form>
+    </div>
+    <div id="add_TP" class="container_form">
+        <h2>Renseignements TP</h2>
+        <form action="#" method="post">
+            <label for="TP_cd">Code TP</label>
+            <select name="TP_cd" id="TP_cd">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+            </select>
+            <label for="TP_name">Nom du TP</label>
+            <input name="TP_name" id="TP_name" type="text" />
+            <input type="submit"/>
+            <input type="reset"/>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Gestion des enseignants</title>
+    <link rel="stylesheet" href="css/screen.css" />
+    <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<div class="head">
+    <div class="head_wrapper">
+        <p class="sorting_title">Trier par
+            <a id="toggle_button" title="voir les options de tri" href="#"></a>
+        </p>
+        <div class="sorting sorting1">
+            <p class="sort_title">DUT</p>
+            <p class="sort_item">MMI</p>
+            <p class="sort_item">PUB</p>
+        </div>
+        <div class="sorting sorting2">
+            <p class="sort_title">Année</p>
+            <p class="sort_item">2A</p>
+            <p class="sort_item">1A</p>
+        </div>
+        <div class="sorting sorting3">
+            <p class="sort_title">Statut</p>
+            <p class="sort_item">Roi</p>
+            <p class="sort_item">Sous-fifre</p>
+        </div>
+    </div>
+</div>
+<div class="main_wrapper">
+    <div class="main_table">
+        <table>
+            <tr>
+                <th><input type="checkbox" /></th>
+                <th>ID</th>
+                <th>Nom</th>
+                <th>Prénom</th>
+                <th>Statut</th>
+                <th>email</th>
+            </tr>
+            <tr>
+                <td><input type="checkbox" /></td>
+                <td>243456</td>
+                <td>Metayer</td>
+                <td>Phillipe</td>
+                <td>Roi</td>
+                <td>philou@gmail.com</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" /></td>
+                <td>243456</td>
+                <td>Metayer</td>
+                <td>Phillipe</td>
+                <td>Roi</td>
+                <td>philou@gmail.com</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" /></td>
+                <td>243456</td>
+                <td>Metayer</td>
+                <td>Phillipe</td>
+                <td>Roi</td>
+                <td>philou@gmail.com</td>
+            </tr>
+        </table>
+    </div>
+</div>
+<div class="adding_form">
+    <h3 id="title_form">Ajouter un enseignant</h3>
+    <form action="#" method="post">
+        <div class="input_group">
+            <label for="teacher_lastname">Nom</label>
+            <input name="teacher_lastname" id="teacher_lastname" type="text" placeholder="Nom" />
+        </div>
+        <div class="input_group">
+            <label for="teacher_firstname">Prénom</label>
+            <input name="teacher_firstname" id="teacher_firstname" type="text" placeholder="Prénom" />
+        </div>
+        <div class="input_group">
+            <label for="teacher_login">Login enseignant</label>
+            <input type="text" name="teacher_login" id="teacher_login" placeholder="Login" />
+        </div>
+        <div class="input_group">
+            <label for="teacher_pass">Mot de passe enseignant</label>
+            <input name="teacher_pass" id="teacher_pass" type="text" placeholder="Mot de passe"/>
+        </div>
+
+        <div class="input_group">
+            <label for="teacher_cd_status">Statut enseignant</label>
+            <select name="teacher_cd_status" id="teacher_cd_status">
+                <option>Statut Roi</option>
+                <option>Statut Sous-fifre</option>
+            </select>
+        </div>
+        <div class="input_group">
+            <label for="teacher_mail">Email enseignant</label>
+            <input name="teacher_mail" id="teacher_mail" type="text" placeholder="Email" />
+        </div>
+        <div class="interact_buttons">
+            <input type="submit" value="AJOUTER" />
+            <input type="reset" value="EFFACER" />
+        </div>
+    </form>
+</div>
+</body>
+</html>

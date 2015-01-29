@@ -1,0 +1,210 @@
+
+.bold{
+    font-weight: bold;
+}
+
+.f-left{
+    float: left;
+}
+
+.f-right{
+    float: right;
+}
+
+h1{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/* login.html */
+
+ul{
+    padding: 0;
+    margin: 0;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+.no-display{
+    display: none;
+}
+
+.f-left{
+    float: left;
+}
+
+.f-right{
+    float: right;
+}
+
+h4{
+    color: $primary-color;
+    font-size: 11px;
+    margin: 4px 0;
+}
+
+.edit{
+    width : 260px;
+    background-color: #FFF;
+    font-size: 12px;
+
+    .edit-container{
+        padding: 10px;
+    }
+
+    .user{
+        border: 1px solid $primary-color;
+        padding: 10px;
+        margin: 0 0 10px;
+        font-size: 13px;
+        text-align: center;
+        position: relative;
+
+        a{
+            display: block;
+        }
+
+        img{
+            position: absolute;
+            top: 5px;
+            left: 10px;
+            height: 20px;
+        }
+
+    }
+
+    .option{
+        margin: 15px 0;
+    }
+
+    .module{
+        .mod{
+            display: inline-block;
+            height: 30px;
+            width: 30px;
+            margin: 0 5px 5px 0;
+            text-align: center;
+            line-height: 30px;
+            color: #FFF;
+            opacity: 0.5;
+        }
+
+        .m23{background-color: #c8cde5;}
+        .m24{background-color: #c8e5ca;}
+        .m26{background-color: #e0e5c8;}
+        .m27{background-color: #e5d9c8;}
+        .m28{background-color: #e5cbc8;}
+        .m29{background-color: #ddc8e5;}
+
+        input[type="radio"]:checked+label{
+            border: none;
+            opacity: 1;
+        }
+    }
+
+    .duree{
+
+        input[type="text"]{
+            border: none;
+            width: 60px;
+            padding: 0;
+            font-size: 12px;
+            font-family: 'Source Code Pro';
+        }
+
+        input[type="text"]:focus{
+            outline: none;
+            border-bottom: 1px solid black;
+        }
+
+        input[type="text"]:checked+label{
+            border-bottom: 1px solid black;
+        }
+
+        .duree-container{
+            position: relative;
+            text-align: center;
+        }
+
+        /* Placeholder color */
+        ::-webkit-input-placeholder {
+            color:    #000;
+            font-family: 'Source Code Pro';
+            font-size: 12px;
+        }
+        :-moz-placeholder {
+            color:    #000;
+            opacity:  1;
+            font-family: 'Source Code Pro';
+        }
+        ::-moz-placeholder {
+            color:    #000;
+            opacity:  1;
+            font-family: 'Source Code Pro';
+        }
+        :-ms-input-placeholder {
+            color:    #000;
+            font-family: 'Source Code Pro';
+        }
+    }
+
+    .groupe{
+        p{
+            margin: 0;
+        }
+
+        .td-tp{
+            margin-right: 20px;
+        }
+    }
+
+    .details{
+        .description{
+            display: block;
+            width: 100%;
+        }
+    }
+
+
+    input[type="radio"], input[type="checkbox"]{
+        display: none;
+    }
+    label{
+        line-height: 18px;
+        cursor: pointer;
+    }
+    input[type="radio"]:checked+label, input[type="checkbox"]:checked+label{
+        border-bottom: 1px solid black;
+    }
+}
+
+.draggableBox{
+    width: 200px;
+    height: 200px;
+    background-color: #000000;
+    position: absolute;
+    cursor: move;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Anim */
+
+.transition-all{
+    transition: All 0.35s ease-out;
+}
+

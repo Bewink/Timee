@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Gestion des étudiants</title>
+    <link rel="stylesheet" href="css/screen.css" />
+    <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <div class="head">
+        <div class="head_wrapper">
+            <p class="sorting_title">Trier par
+                <a id="toggle_button" title="voir les options de tri" href="#"></a>
+            </p>
+            <div class="sorting sorting1">
+                <p class="sort_title">DUT</p>
+                <p class="sort_item">MMI</p>
+                <p class="sort_item">PUB</p>
+            </div>
+            <div class="sorting sorting2">
+                <p class="sort_title">Année</p>
+                <p class="sort_item">2A</p>
+                <p class="sort_item">1A</p>
+            </div>
+            <div class="sorting sorting3">
+                <p class="sort_title">Groupe</p>
+                <p class="sort_item">TP1</p>
+                <p class="sort_item">TP2</p>
+                <p class="sort_item">TP3</p>
+            </div>
+        </div>
+    </div>
+    <div class="main_wrapper">
+        <div class="main_table">
+            <table>
+                <tr>
+                    <th><input type="checkbox" /></th>
+                    <th>ID</th>
+                    <th>Nom</th>
+                    <th>Prénom</th>
+                    <th>DUT</th>
+                    <th>TD</th>
+                    <th>TP</th>
+                    <th>email</th>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" /></td>
+                    <td>243456</td>
+                    <td>Julius</td>
+                    <td>Robert</td>
+                    <td>MMI</td>
+                    <td>TD1</td>
+                    <td>TP2</td>
+                    <td>juliusrobert@gmail.com</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" /></td>
+                    <td>243456</td>
+                    <td>Julius</td>
+                    <td>Robert</td>
+                    <td>MMI</td>
+                    <td>TD1</td>
+                    <td>TP2</td>
+                    <td>juliusrobert@gmail.com</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" /></td>
+                    <td>243456</td>
+                    <td>Julius</td>
+                    <td>Robert</td>
+                    <td>MMI</td>
+                    <td>TD1</td>
+                    <td>TP2</td>
+                    <td>juliusrobert@gmail.com</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="adding_form">
+        <h3 id="title_form">Ajouter un étudiant</h3>
+        <form action="#" method="post">
+            <div class="input_group">
+                <label for="student_login">Login étudiant</label>
+                <input name="student_login" id="student_login" type="text" placeholder="Login"/>
+            </div>
+            <div class="input_group">
+                <label for="student_pass">Mot de passe étudiant</label>
+                <input name="student_pass" id="student_pass" type="password" placeholder="Mot de passe"/>
+            </div>
+            <div class="input_group">
+                <label for="student_lastname">Nom</label>
+                <input name="student_lastname" id="student_lastname" type="text" placeholder="Nom" />
+            </div>
+            <div class="input_group">
+                <label for="student_firstname">Prénom</label>
+                <input name="student_firstname" id="student_firstname" type="text" placeholder="Prénom"/>
+            </div>
+
+
+            <div class="input_group">
+                <label for="student_dut">DUT étudiant</label>
+                <input name="student_dut" id="student_dut" type="text" placeholder="Nom du DUT"/>
+            </div>
+            <div class="input_group">
+                <label for="student_td" style="display: block">TD</label>
+                <select name="student_td" id="student_td">
+                    <option>TD1</option>
+                    <option>TD2</option>
+                </select>
+            </div>
+            <div class="input_group">
+                <label for="student_tp" style="display: block">TP</label>
+                <select name="student_tp" id="student_tp">
+                    <option>TP1</option>
+                    <option>TP2</option>
+                    <option>TP3</option>
+                </select>
+            </div>
+            <div class="input_group">
+                <label for="student_sem" style="display: block">Semestre</label>
+                <select name="student_sem" id="student_sem">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select>
+            </div>
+            <div class="input_group">
+                <label for="student_mail">Email étudiant</label>
+                <input name="student_mail" id="student_mail" type="text" placeholder="Email"/>
+            </div>
+            <div class="interact_buttons">
+                <input type="submit" value="AJOUTER" />
+                <input type="reset" value="EFFACER"/>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

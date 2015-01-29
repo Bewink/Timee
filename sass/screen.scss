@@ -27,7 +27,30 @@ h1 {
     font-weight: 400;
 }
 
+
+input::-webkit-input-placeholder{
+    font-family: "source code pro";
+}
+
+input:-moz-placeholder{
+    font-family: "source code pro";
+}
+
+input::-moz-placeholder{
+    font-family: "source code pro";
+}
+
+input:-ms-input-placeholder{
+    font-family: "source code pro";
+}
+
+//imports
+
 @import "login";
 @import "menu";
 @import "header";
 @import "timetable";
+@import "addStudent";
+@import "addTeacher";
+@import "addRoom";
+@import "panel";

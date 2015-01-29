@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Gestion des salles</title>
+    <link rel="stylesheet" href="css/screen.css" />
+    <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<div class="head">
+    <div class="head_wrapper">
+        <p class="sorting_title">Trier par
+            <a id="toggle_button" title="voir les options de tri" href="#"></a>
+        </p>
+        <div class="sorting sorting1">
+            <p class="sort_title">DUT</p>
+        </div>
+        <div class="sorting sorting2">
+            <p class="sort_title">UE</p>
+        </div>
+        <div class="sorting sorting3">
+            <p class="sort_title">Module</p>
+        </div>
+        <div class="sorting sorting4">
+            <p class="sort_title">TP</p>
+        </div>
+        <div class="sorting sorting5">
+            <p class="sort_title">TD</p>
+        </div>
+        <div class="sorting sorting6">
+            <p class="sort_title">Salle</p>
+        </div>
+        <div class="sorting sorting7">
+            <p class="sort_title">Statut</p>
+        </div>
+        <div class="sorting sorting8">
+            <p class="sort_title">Semestre</p>
+        </div>
+    </div>
+</div>
+<div class="main_wrapper">
+    <div class="main_table">
+        <table>
+            <tr>
+                <th><input type="checkbox" /></th>
+                <th>Type</th>
+                <th>Nom</th>
+                <th>Capacité</th>
+                <th>Nombre de postes</th>
+            </tr>
+            <tr>
+                <td><input type="checkbox" /></td>
+                <td>Salle</td>
+                <td>S.232</td>
+                <td>35</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" /></td>
+                <td>Salle</td>
+                <td>S.255-256</td>
+                <td>60</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" /></td>
+                <td>Salle</td>
+                <td>S.227</td>
+                <td>40</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" /></td>
+                <td>Salle</td>
+                <td>S.252</td>
+                <td>25</td>
+                <td>25</td>
+            </tr>
+        </table>
+    </div>
+</div>
+<div class="adding_form">
+    <h3 id="title_form">Ajouter une salle</h3>
+    <form action="#" method="post">
+        <div class="input_group">
+            <label for="teacher_lastname">Type</label>
+            <input name="teacher_lastname" id="teacher_lastname" type="text" placeholder="Type" />
+        </div>
+        <div class="input_group">
+            <label for="teacher_firstname">Nom</label>
+            <input name="teacher_firstname" id="teacher_firstname" type="text" placeholder="Nom" />
+        </div>
+        <div class="input_group">
+            <label for="teacher_login">Capacité</label>
+            <input type="text" name="teacher_login" id="teacher_login" placeholder="Capacité" />
+        </div>
+        <div class="input_group">
+            <label for="teacher_pass">Nombre de postes</label>
+            <input name="teacher_pass" id="teacher_pass" type="text" placeholder="Nombre de postes"/>
+        </div>
+        <div class="interact_buttons">
+            <input type="submit" value="AJOUTER" />
+            <input type="reset" value="EFFACER" />
+        </div>
+    </form>
+</div>
+</body>
+</html>
