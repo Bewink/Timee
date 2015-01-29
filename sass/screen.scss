@@ -5,8 +5,17 @@ body {
     font-family: "Source Code Pro";
 }
 
+.wrapper{
+    max-width: 960px;
+    margin: auto;
+}
+
 .bold {
     font-weight: bold;
+}
+
+.italic{
+    font-style: italic
 }
 
 .planning-container {
@@ -22,11 +31,32 @@ body {
     float: right;
 }
 
+.relative{
+    position: relative;
+}
+
+.clear{
+    clear: both;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+.no-display{
+    display: none;
+}
+
 h1 {
     font-size: 14px;
     font-weight: 400;
 }
 
+h3{
+    color: $primary-color;
+    font-size: 11px;
+    margin: 4px 0;
+}
 
 input::-webkit-input-placeholder{
     font-family: "source code pro";

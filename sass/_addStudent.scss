@@ -1,10 +1,8 @@
 
-.head_wrapper{
-    width: auto;
-    height: auto;
-    padding: 50px 0 20px 250px;
+.head{
+    padding: 20px 0;
     .sorting_title{
-        font-size: 14pt;
+        font-size: 14px;
         #toggle_button{
             display: inline-block;
             width: 0;
@@ -27,17 +25,17 @@
     }
 }
     .sort_title{
-        font-size: 10pt;
+        font-size: 10px;
         color: $primary-color;
         margin-bottom: 5px;
     }
     .sort_item{
-        font-size: 12pt;
+        font-size: 12px;
     }
 
-.main_wrapper{
+.main_content{
     background-color: #eeeeee;
-    padding: 50px 0 50px 0;
+    padding: 40px 0;
     .main_table{
         width: 80%;
         margin: auto;
@@ -49,14 +47,14 @@
             }
             th{
                 border-bottom: 1px solid #bdbdbd;
-                font-size: 9pt;
+                font-size: 9px;
                 padding-left: 0;
             }
             td{
                 height: auto;
                 border: none;
                 text-align: left;
-                font-size: 11pt;
+                font-size: 11px;
                 vertical-align: top;
                 padding-top: 20px;
             }
@@ -68,14 +66,12 @@
     width: 80%;
     margin: 50px auto auto auto;
     #title_form{
-        width: 95%;
-        margin: auto;
-        font-size: 14pt;
+        font-size: 14px;
         margin-bottom: 20px;
         padding-left: 10px;
+        color: #000;
     }
     form{
-        width: 95%;
         margin: auto;
         .input_group{
             display: inline-block;
@@ -84,7 +80,7 @@
             label{
                 display: none;
                 margin-bottom: 5px;
-                font-size: 11pt;
+                font-size: 11px;
                 color: $primary-color;
             }
             input{
@@ -108,7 +104,7 @@
             input{
                 display: block;
                 font-family: "Source Code Pro";
-                font-size: 11pt;
+                font-size: 11px;
                 padding: 2px 35px 2px 35px;
                 background-color: #FFFFFF;
                 border: 1px solid $primary-color;

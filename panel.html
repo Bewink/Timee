@@ -14,87 +14,114 @@
 
 <body>
 
-  <form name="Class_slot" class="edit">
-    <div class="edit-container">
-        <p class="user"><a href=""><img src="img/user-icon.png" alt="icon utilisateur" /></i>Philippe <span class="uppercase">Metayer</span></a></p>
+<div class="wrapper">
+  <div class="weeks">
+    <p><a href="">Semaine 42</a></p>
+    <ul class="weeks-list">
+      <li><a href="">01</a></li>
+      <li><a href="">02</a></li>
+      <li><a href="">03</a></li>
+      <li><a href="">04</a></li>
+      <li><a href="">05</a></li>
+    </ul>
+  </div>
+</div>
 
-        <div class="module option">
-          <h4>Module</h4>
-
-          <input type="radio" value="m23" name="module" id="m23">
-          <label for="m23" class="mod m23">M23</label>
-
-          <input type="radio" value="m24" name="module" id="m24">
-          <label for="m24" class="mod m24">M24</label>
-
-          <input type="radio" value="m26" name="module" id="m26">
-          <label for="m26" class="mod m26">M26</label>
-
-          <input type="radio" value="m27" name="module" id="m27">
-          <label for="m27" class="mod m27">M27</label>
-
-          <input type="radio" value="m28" name="module" id="m28">
-          <label for="m28" class="mod m28">M28</label>
-
-          +
-        </div>
-
-        <div class="cours option">
-          <h4>Cours</h4>
-          <input type="radio" value="service_reseau" name="cours" id="service_reseau">
-          <label class="" for="service_reseau">Service réseau</label><br>
-          <input type="radio" value="big_data" name="cours" id="big_data">
-          <label class="" for="big_data">Big Data</label><br>
-          <input type="radio" value="culture_scientifique" name="cours" id="culture_scientifique">
-          <label class="" for="culture_scientifique">Culture Scientifique</label><br>
-        </div>
-
-        <div class="duree option">
-          <h4>Durée</h4>
-          <div class="duree-container">
-            <input type="radio" value="2hours" name="duree" id="2hours">
-            <label class="f-left" for="2hours">2 heures</label>
-            <input type="radio" value="4hours" name="duree" id="4hours">
-            <label class="" for="4hours">4 heures</label>
-            <label class="no-display" for="other_hour">Autre...</label>
-            <input type="text" name="duree" id="other_hour" class="f-right" placeholder="Autre...">
-
-          </div>
-        </div>
-
-       <div class="groupe option">
-          <h4>Groupe</h4>
-          <p>Classe entière :
-          <input type="radio" value="full-cm" name="groupe" id="full-cm">
-          <label class="" for="full-cm">CM</label> /
-          <input type="radio" value="full-td" name="groupe" id="full-td">
-          <label class="" for="full-td">TD</label> /
-          <input type="radio" value="full-tp" name="groupe" id="full-tp">
-          <label class="" for="full-tp">TP</label>
-          </p>
-          <input type="radio" value="td1" name="groupe" id="td1">
-          <label class="td-tp" for="td1">TD1</label>
-          <input type="radio" value="td2" name="groupe" id="td2">
-          <label class="td-tp" for="td2">TD2</label><br>
-
-          <input type="radio" value="tp1" name="groupe" id="tp1">
-          <label class="td-tp" for="tp1">TP1</label>
-          <input type="radio" value="tp2" name="groupe" id="tp2">
-          <label class="td-tp" for="tp2">TP2</label>
-          <input type="radio" value="tp3" name="groupe" id="tp3">
-          <label class="td-tp" for="tp3">TP3</label>
-        </div>
-        <div class="details option">
-          <h4>Details</h4>
-          <input type="checkbox" value="exam" name="detail" id="exam">
-          <label class="" for="exam">Examen</label>
-          <input class="description" type="text" placeholder="Description" name="description">
-          <label class="no-display" for="exam">Description</label>
-        </div>
-
-        <div class="draggableBox">1</div>
+<div class="main-edit">
+  <div class="wrapper relative">
+    <div class="plannig">
+      
     </div>
-  </form>
+    <div class="edit f-right">
+      <form name="Class_slot" class="edit">
+        <div class="edit-container">
+            <p class="user"><a href=""><img src="img/user-icon.png" alt="icon utilisateur" /></i>Philippe <span class="uppercase">Metayer</span></a></p>
+
+            <div class="class option">
+              <h3>Classe</h3>
+              <input type="radio" value="mmi_1a" name="class" id="mmi_1a">
+              <label class="space" for="mmi_1a">MMI 1A</label>
+              <input type="radio" value="mmi_2a" name="class" id="mmi_2a">
+              <label class="space" for="mmi_2a">MMI 2A</label>
+              <input type="radio" value="lp" name="class" id="lp">
+              <label class="space" for="lp">LP</label><br>
+              <input type="radio" value="pub_1a" name="class" id="pub_1a">
+              <label class="space" for="pub_1a">PUB 1A</label>
+              <input type="radio" value="pub_2a" name="class" id="pub_2a">
+              <label class="" for="pub_2a">PUB 2A</label><br>
+            </div>
+
+            <div class="module option">
+              <h3>Cours</h3>
+                <div class="module-container">
+                <input type="radio" value="m23" name="module" id="m23">
+                <label for="m23" class="mod m23">M23</label><label for="m23">Service réseau</label><br>
+
+                <input type="radio" value="m24" name="module" id="m24">
+                <label for="m24" class="mod m24">M24</label><label for="m24">Big data</label><br>
+
+                <input type="radio" value="m26" name="module" id="m26">
+                <label for="m26" class="mod m26">M26</label><label for="m26">Culture Scientifique</label><br>
+
+                <input type="radio" value="m27" name="module" id="m27">
+                <label for="m27" class="mod m27">M27</label><label for="m27">Expression artistique</label><br>
+
+                <input type="radio" value="m28" name="module" id="m28">
+                <label for="m28" class="mod m28">M28</label><label for="m28">Musique</label><br>
+                </div>
+            </div>
+
+            <div class="duree option">
+              <h3>Durée</h3>
+              <div class="duree-container">
+                <input type="radio" value="2hours" name="duree" id="2hours">
+                <label class="f-left" for="2hours">2 heures</label>
+                <input type="radio" value="4hours" name="duree" id="4hours">
+                <label class="" for="4hours">4 heures</label>
+                <label class="no-display" for="other_hour">Autre...</label>
+                <input type="text" name="duree" id="other_hour" class="f-right" placeholder="Autre...">
+
+              </div>
+            </div>
+
+           <div class="groupe option">
+              <h3>Groupe</h3>
+              <p>Classe entière :
+              <input type="radio" value="full-cm" name="groupe" id="full-cm">
+              <label class="italic" for="full-cm">CM</label> /
+              <input type="radio" value="full-td" name="groupe" id="full-td">
+              <label class="italic" for="full-td">TD</label> /
+              <input type="radio" value="full-tp" name="groupe" id="full-tp">
+              <label class="italic" for="full-tp">TP</label>
+              </p>
+              <input type="radio" value="td1" name="groupe" id="td1">
+              <label class="space" for="td1">TD1</label>
+              <input type="radio" value="td2" name="groupe" id="td2">
+              <label class="space" for="td2">TD2</label><br>
+
+              <input type="radio" value="tp1" name="groupe" id="tp1">
+              <label class="space" for="tp1">TP1</label>
+              <input type="radio" value="tp2" name="groupe" id="tp2">
+              <label class="space" for="tp2">TP2</label>
+              <input type="radio" value="tp3" name="groupe" id="tp3">
+              <label class="space" for="tp3">TP3</label>
+            </div>
+            <div class="details option">
+              <h3>Details</h3>
+              <input type="checkbox" value="exam" name="detail" id="exam">
+              <label class="" for="exam">Examen</label>
+              <input class="description" type="text" placeholder="Description" name="description">
+              <label class="no-display" for="exam">Description</label>
+            </div>
+
+            <div class="draggableBox">1</div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
   <script type="text/javascript" src="javascript/app.js"></script>
 </body>
 </html>

@@ -16,34 +16,55 @@ h1{
     font-weight: 400;
 }
 
-/* login.html */
+/* Liste Semaines */
+
+.weeks{
+    p{
+        font-size: 14px;
+    }
+    .weeks-list{
+
+        li{
+            display: inline-block;
+            margin: 0 1px;
+            
+            &:first-child{
+                margin: 0;
+            }
+
+            a{
+                color: $primary-color;
+                font-size: 11px;
+                text-decoration: none;
+                margin: 0 4px;
+
+                &:first-child{
+                    margin: 0;
+                }
+            }
+        }
+
+    }
+}
+
+/* ------------------------------------ */
+/* MAIN CONTENT    -------------------- */
+/* ------------------------------------ */
+
+.main-edit{
+    background-color: #eeeeee;
+    overflow: auto;
+}
+
+/* Creneaux */
+
+
 
 ul{
     padding: 0;
     margin: 0;
 }
 
-.uppercase{
-    text-transform: uppercase;
-}
-
-.no-display{
-    display: none;
-}
-
-.f-left{
-    float: left;
-}
-
-.f-right{
-    float: right;
-}
-
-h4{
-    color: $primary-color;
-    font-size: 11px;
-    margin: 4px 0;
-}
 
 .edit{
     width : 260px;
@@ -52,6 +73,10 @@ h4{
 
     .edit-container{
         padding: 10px;
+    }
+
+    .space{
+        margin-right: 20px;
     }
 
     .user{
@@ -64,6 +89,8 @@ h4{
 
         a{
             display: block;
+            color: #000;
+            text-decoration: none;
         }
 
         img{
@@ -80,6 +107,14 @@ h4{
     }
 
     .module{
+
+        .module-container{
+            height: 135px;
+            overflow: scroll;
+            margin-top: 10px;
+        }
+
+
         .mod{
             display: inline-block;
             height: 30px;
@@ -98,7 +133,7 @@ h4{
         .m28{background-color: #e5cbc8;}
         .m29{background-color: #ddc8e5;}
 
-        input[type="radio"]:checked+label{
+        input[type="radio"]:checked+.mod{
             border: none;
             opacity: 1;
         }
@@ -154,16 +189,13 @@ h4{
         p{
             margin: 0;
         }
-
-        .td-tp{
-            margin-right: 20px;
-        }
     }
 
     .details{
         .description{
             display: block;
             width: 100%;
+            margin-top: 5px;
         }
     }
 
