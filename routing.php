@@ -11,6 +11,10 @@ $routes = array(
         'file' => 'Home/HomeController.php',
         'action' => 'index'
     ),
+    'etudiant' => array(
+        'file' => 'Home/HomeController.php',
+        'action' => 'etudiant'
+    ),
     'disconnect' => array(
         'file' => 'Home/HomeController.php',
         'action' => 'disconnect'

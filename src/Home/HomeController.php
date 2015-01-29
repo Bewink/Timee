@@ -48,6 +48,10 @@ class HomeController extends Controller {
         }
     }
 
+    public function etudiant() {
+        $this->template->render('addStudent.html.twig');
+    }
+
     public function disconnectAction() {
         $this->request->destroySession();
         header('Location: ' . BEFEW_BASE_URL);
