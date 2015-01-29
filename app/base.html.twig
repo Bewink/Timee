@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
 
-    <title>BeFeW{% block title %}{% endblock %}</title>
+    <title>Timee{% block title %}{% endblock %}</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
 
     {% block stylesheets %}{% endblock %}
     {% block scripts %}{% endblock %}
@@ -15,12 +18,65 @@
     {% for path in scripts %}
     <script type="text/javascript" src="{{ path }}"></script>
     {% endfor %}
+
+    <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 </head>
 <body>
-{% block content %}{% endblock %}
+    <header>
+        <div class="header-row">
+            <div class="desc">
+                <div class="page f-left">
+                    <span>Page</span>
+                    <p>Edition</p>
+                </div>
 
-{% for path in footScripts %}
-    <script type="text/javascript" src="{{ path }}"></script>
-{% endfor %}
+                <div class="user f-right">
+                    <span>Bonjour</span>
+                    <p>{{ firstname }} {{ lastname }}</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sidemenu -->
+
+    <aside id="sideMenu" class="transition-all">
+        <i id="showMenu" class="close-menu transition-all">XXX</i>
+        <ul>
+            <li class="bold">Menu</li>
+            <li><a href="#">Profil</a></li>
+            <li><a href="#">Editer</a></li>
+            <li><a href="#">Etudiants</a></li>
+            <li><a href="#">Parametres</a></li>
+            <li><a href="disconnect">Deconnection</a></li>
+        </ul>
+    </aside>
+
+    <div class="pop">
+        {% for error in errors %}
+            <p class="alert alert-error">
+                {{ error }}
+            </p>
+        {% endfor %}
+
+        {% for warning in warnings %}
+            <p class="alert alert-warning">
+                {{ warning }}
+            </p>
+        {% endfor %}
+
+        {% for info in infos %}
+            <p class="alert alert-info">
+                {{ info }}
+            </p>
+        {% endfor %}
+    </div>
+    <!-- Sidemenu end -->
+
+    {% block content %}{% endblock %}
+
+    {% for path in footScripts %}
+        <script type="text/javascript" src="{{ path }}"></script>
+    {% endfor %}
 </body>
 </html>

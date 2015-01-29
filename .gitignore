@@ -6,3 +6,5 @@ composer.lock
 
 vendor/*
 !vendor/befew
+
+.sass-cache

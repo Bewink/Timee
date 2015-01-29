@@ -2,7 +2,14 @@
 
 namespace vendor\befew;
 
+/**
+ * Class Response
+ * @package vendor\befew
+ */
 class Response {
+    /**
+     * @param $code
+     */
     public static function throwStatus($code) {
         switch($code) {
             case 404:

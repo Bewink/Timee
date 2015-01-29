@@ -1,7 +1,7 @@
 <?php
 
-use vendor\befew\Request as Request;
-use vendor\befew\Response as Response;
+use vendor\befew\Request;
+use vendor\befew\Response;
 
 $url = Request::getGet('page', 'index', true);
 
@@ -10,6 +10,10 @@ $routes = array(
     'index' => array(
         'file' => 'Home/HomeController.php',
         'action' => 'index'
+    ),
+    'disconnect' => array(
+        'file' => 'Home/HomeController.php',
+        'action' => 'disconnect'
     ),
 );
 

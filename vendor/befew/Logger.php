@@ -2,19 +2,40 @@
 
 namespace vendor\befew;
 
+/**
+ * Class Logger
+ * @package vendor\befew
+ */
 class Logger {
+    /**
+     * @param $message
+     * @param bool $die
+     */
     public static function info($message, $die = false) {
         self::display('info', $message, $die);
     }
 
+    /**
+     * @param $message
+     * @param bool $die
+     */
     public static function warning($message, $die = false) {
         self::display('warning', $message, $die);
     }
 
+    /**
+     * @param $message
+     * @param bool $die
+     */
     public static function error($message, $die = false) {
         self::display('error', $message, $die);
     }
 
+    /**
+     * @param $level
+     * @param $message
+     * @param bool $die
+     */
     public static function display($level, $message, $die = false)
     {
         if (is_string($message)) {

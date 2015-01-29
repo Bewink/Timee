@@ -6,3 +6,4 @@ define('DB_USER', 'your database username here');
 define('DB_PASSWORD', 'your database password here');
 
 define('BEFEW_BASE_URL', DIRECTORY_SEPARATOR);
+define('BEFEW_SECRET_TOKEN', 'put some secret key here');

@@ -2,12 +2,26 @@
 
 namespace vendor\befew;
 
+/**
+ * Class Controller
+ * @package vendor\befew
+ */
 class Controller {
     protected $request;
     protected $tplpath;
     protected $template;
+    protected $db;
 
+    /**
+     * Constructor
+     * @param $url
+     * @param $action
+     */
     public function __construct($url, $action) {
+        global $DBH;
+
+        $this->db = $DBH;
+
         $action = $action . 'Action';
         $reflector = new \ReflectionClass(get_class($this));
 
@@ -25,6 +39,9 @@ class Controller {
         }
     }
 
+    /**
+     * @param int $code
+     */
     public function errorAction($code = 404) {
         Response::throwStatus($code);
     }
