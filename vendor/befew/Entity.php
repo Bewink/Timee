@@ -75,12 +75,9 @@ class Entity {
                     $key .= $chars[rand(0, count($chars))];
                 }
 
-                $query = $this->db->prepare('SELECT * FROM :tablename WHERE :keyname = :keyvalue');
+                $query = $this->db->prepare('SELECT * FROM ' . $this->uniqueKeyInfo['table'] . ' WHERE ' . $this->uniqueKeyInfo['key'] . ' = :keyvalue');
                 $query->execute(array(
-                    'tablename' => $this->uniqueKeyInfo['table'],
-                    'keyname' => $this->uniqueKeyInfo['key'],
-                    'keyvalue' => $key,
-                    'length' => $this->uniqueKeyInfo['length']
+                    'keyvalue' => $key
                 ));
             } while ($query->rowCount() > 0);
 
