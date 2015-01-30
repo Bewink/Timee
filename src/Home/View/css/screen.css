@@ -496,3 +496,12 @@ table .test3 {
 .adding_form form .interact_buttons input:first-of-type {
   margin-bottom: 10px;
 }
+
+/* line 6, ../sass/_addTeacher.scss */
+.adding_form form .input_group #teacher_mail {
+  width: auto;
+}
+/* line 9, ../sass/_addTeacher.scss */
+.adding_form form .input_group #teacher_pass {
+  width: auto;
+}

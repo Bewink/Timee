@@ -15,6 +15,10 @@ $routes = array(
         'file' => 'Home/HomeController.php',
         'action' => 'etudiant'
     ),
+    'enseignant' => array(
+        'file' => 'Home/HomeController.php',
+        'action' => 'enseignant'
+    ),
     'disconnect' => array(
         'file' => 'Home/HomeController.php',
         'action' => 'disconnect'
