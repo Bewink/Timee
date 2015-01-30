@@ -87,6 +87,8 @@ class HomeController extends Controller {
                     $student->setCdSemester($semester);
                     $student->setEmail($mail);
 
+                    $student->save();
+
 
                 }
                 else {

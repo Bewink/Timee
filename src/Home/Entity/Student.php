@@ -83,7 +83,7 @@ class Student extends User {
         if(Utils::getVar($this->num) == null) {
             $this->num = $this->generateUniqId();
             $query = $this->db->prepare("INSERT INTO student(NUMSTUDENT, NUMTD, NUMTP, CDSEMESTER, CDDUT, LOGINSTUDENT, PASSWORDSTUDENT, FIRSTNAMESTUDENT, LASTNAMESTUDENT, EMAILSTUDENT)
-                                          VALUES(:id, :td, :tp, :semester, :dut, :login, :pass, :firstname, :lastname, :mail");
+                                          VALUES(:id, :td, :tp, :semester, :dut, :login, :pass, :firstname, :lastname, :mail)");
             $query->execute(array(
                 'id' => $this->num,
                 'td' => $this->numTD,
