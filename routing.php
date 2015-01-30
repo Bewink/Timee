@@ -19,6 +19,10 @@ $routes = array(
         'file' => 'Home/HomeController.php',
         'action' => 'enseignant'
     ),
+    'parametres' => array(
+        'file' => 'Home/HomeController.php',
+        'action' => 'parametres'
+    ),
     'disconnect' => array(
         'file' => 'Home/HomeController.php',
         'action' => 'disconnect'

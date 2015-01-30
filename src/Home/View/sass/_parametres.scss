@@ -1,0 +1,26 @@
+
+@for $i from 2 through 8{
+    .sorting#{$i}{
+        margin-left: 70px;
+    }
+}
+.adding_form{
+    #title_form{
+    }
+    form{
+        .input_group{
+            #student_mail{
+                width: auto;
+            }
+            #student_pass{
+                width: auto;
+            }
+            #student_dut{
+                width: auto;
+            }
+            select{
+                width: auto;
+            }
+        }
+    }
+}

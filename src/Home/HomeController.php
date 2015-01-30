@@ -59,6 +59,11 @@ class HomeController extends Controller {
         $this->template->addJS('main.js', false);
         $this->template->render('addTeacher.html.twig');
     }
+    public function parametresAction() {
+        $this->template->addCSS('screen.css');
+        $this->template->addJS('main.js', false);
+        $this->template->render('parametres.html.twig');
+    }
 
     public function disconnectAction() {
         $this->request->destroySession();
