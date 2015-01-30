@@ -36,30 +36,16 @@
                     <th>Statut</th>
                     <th>email</th>
                 </tr>
+                {% for teacher in teachers %}
                 <tr>
                     <td><input type="checkbox" /></td>
-                    <td>243456</td>
-                    <td>Metayer</td>
-                    <td>Phillipe</td>
-                    <td>Roi</td>
-                    <td>philou@gmail.com</td>
+                    <td>{{ teacher.getNum() }}</td>
+                    <td>{{ teacher.getFirstname() }}</td>
+                    <td>{{ teacher.getLastname() }}</td>
+                    <td>{{ teacher.getCdStatus() }}</td>
+                    <td>{{ teacher.getEmail() }}</td>
                 </tr>
-                <tr>
-                    <td><input type="checkbox" /></td>
-                    <td>243456</td>
-                    <td>Metayer</td>
-                    <td>Phillipe</td>
-                    <td>Roi</td>
-                    <td>philou@gmail.com</td>
-                </tr>
-                <tr>
-                    <td><input type="checkbox" /></td>
-                    <td>243456</td>
-                    <td>Metayer</td>
-                    <td>Phillipe</td>
-                    <td>Roi</td>
-                    <td>philou@gmail.com</td>
-                </tr>
+                {% endfor %}
             </table>
         </div>
     </div>

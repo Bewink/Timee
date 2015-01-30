@@ -2,6 +2,7 @@
 
 namespace src\Home;
 
+use src\Home\Entity\Student;
 use vendor\befew\Controller;
 use vendor\befew\Logger;
 use src\Home\Entity\User;
@@ -49,15 +50,27 @@ class HomeController extends Controller {
     }
 
     public function etudiantAction() {
+
+        $student = new Student();
+        $students = $student->retrieveAll();
+
         $this->template->addCSS('screen.css');
         $this->template->addJS('main.js', false);
-        $this->template->render('addStudent.html.twig');
+        $this->template->render('addStudent.html.twig', array(
+            'students' => $students
+        ));
     }
 
     public function enseignantAction() {
+
+        $teacher = new Teacher();
+        $teachers = $teacher->retrieveAll();
+
         $this->template->addCSS('screen.css');
         $this->template->addJS('main.js', false);
-        $this->template->render('addTeacher.html.twig');
+        $this->template->render('addTeacher.html.twig', array(
+            'teachers' => $teachers
+        ));
     }
     public function parametresAction() {
         $this->template->addCSS('screen.css');

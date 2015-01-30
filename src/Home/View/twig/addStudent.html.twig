@@ -5,7 +5,7 @@
 {% block content %}
     <div class="head">
         <div class="head_wrapper">
-            <p class="sorting_title">Trier par
+            <p class="sorting_title">Filtrer par
                 <a id="toggle_button" title="voir les options de tri" href="#"></a>
             </p>
             <div class="sorting sorting1">
@@ -39,35 +39,18 @@
                     <th>TP</th>
                     <th>email</th>
                 </tr>
+                {% for student in students %}
                 <tr>
                     <td><input type="checkbox" /></td>
-                    <td>243456</td>
-                    <td>Julius</td>
-                    <td>Robert</td>
-                    <td>MMI</td>
-                    <td>TD1</td>
-                    <td>TP2</td>
-                    <td>juliusrobert@gmail.com</td>
+                    <td>{{ student.getNum }}</td>
+                    <td>{{ student.getFirstname() }}</td>
+                    <td>{{ student.getLastname() }}</td>
+                    <td>{{ student.getCdDUT() }}</td>
+                    <td>{{ student.getNumTD() }}</td>
+                    <td>{{ student.getNumTP() }}</td>
+                    <td>{{ student.getEmail() }}</td>
                 </tr>
-                <tr>
-                    <td><input type="checkbox" /></td>
-                    <td>243456</td>
-                    <td>Julius</td>
-                    <td>Robert</td>
-                    <td>MMI</td>
-                    <td>TD1</td>
-                    <td>TP2</td>
-                    <td>juliusrobert@gmail.com</td>
-                </tr>
-                <tr>
-                    <td><input type="checkbox" /></td>
-                    <td>243456</td>
-                    <td>Julius</td>
-                    <td>Robert</td>
-                    <td>MMI</td>
-                    <td>TD1</td>
-                    <td>TP2</td>
-                    <td>juliusrobert@gmail.com</td>
+                {% endfor %}
                 </tr>
             </table>
         </div>
