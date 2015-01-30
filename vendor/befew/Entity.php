@@ -94,8 +94,8 @@ class Entity {
      * @param $length
      */
     protected function setUniqueIdInfo($tableName, $keyName, $length) {
-        $uniqueKeyInfo['table'] = $tableName;
-        $uniqueKeyInfo['key'] = $keyName;
-        $uniqueKeyInfo['length'] = $length;
+        $this->uniqueKeyInfo['table'] = $tableName;
+        $this->uniqueKeyInfo['key'] = $keyName;
+        $this->uniqueKeyInfo['length'] = $length;
     }
 }
