@@ -3,6 +3,7 @@
 namespace src\Home\Entity;
 
 use vendor\befew\Logger;
+use vendor\befew\Utils;
 
 /**
  * Class Teacher
@@ -66,5 +67,37 @@ class Teacher extends User {
         } else {
             return false;
         }
+    }
+
+    public function save() {
+        if(Utils::getVar($this->num) == null) {
+            $this->num = $this->generateUniqId();
+            $query = $this->db->prepare("INSERT INTO teacher(NUMTEACHER, CDSTATUS, LOGINTEACHER, PASSWORDTEACHER, FIRSTNAMETEACHER, LASTNAMETEACHER, EMAILTEACHER)
+                                          VALUES(:id, :cdstatus, :login, :pass, :firstname, :lastname, :mail)");
+            $query->execute(array(
+                'id' => $this->num,
+                'cdstatus' => $this->cdStatus,
+                'login' => $this->login,
+                'pass'  => $this->password,
+                'firstname' => $this->firstname,
+                'lastname' => $this->lastname,
+                'mail' => $this->email
+            ));
+        } else {
+            $query = $this->db->prepare("UPDATE teacher
+                                          SET CDSTATUS = :cdstatus, LOGINTEACHER = :login, PASSWORDTEACHER = :pass, FIRSTNAMETEACHER = :firstname, LASTNAMETEACHER = :lastname, EMAILTEACHER = :mail
+                                          WHERE NUMTEACHER = :id");
+            $query->execute(array(
+                'id' => $this->num,
+                'cdstatus' => $this->cdStatus,
+                'login' => $this->login,
+                'pass'  => $this->password,
+                'firstname' => $this->firstname,
+                'lastname' => $this->lastname,
+                'mail' => $this->email
+            ));
+        }
+
+        return true;
     }
 }

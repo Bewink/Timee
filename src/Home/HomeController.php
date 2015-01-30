@@ -117,6 +117,40 @@ class HomeController extends Controller {
     public function enseignantAction() {
 
         $teacher = new Teacher();
+
+        if($this->request->isPostData()) {
+            if (Request::getPost('teacher_lastname') != null
+                AND Request::getPost('teacher_firstname') != null
+                AND Request::getPost('teacher_login') != null
+                AND Request::getPost('teacher_pass') != null
+                AND Request::getPost('teacher_cd_status') != null
+                AND Request::getPost('teacher_mail') != null) {
+
+                if(filter_var($_POST['teacher_mail'], FILTER_VALIDATE_EMAIL)){
+
+                    $login = htmlentities($_POST['teacher_login']);
+                    $pass = Utils::cryptPassword($_POST['teacher_pass']);
+                    $lastname = htmlentities($_POST['teacher_lastname']);
+                    $firstname = htmlentities($_POST['teacher_firstname']);
+                    $cdstatus = htmlentities($_POST['teacher_cd_status']);
+                    $mail = htmlentities($_POST['teacher_mail']);
+
+                    $teacher->setLogin($login);
+                    $teacher->setPassword($pass);
+                    $teacher->setLastname($lastname);
+                    $teacher->setFirstname($firstname);
+                    $teacher->setCdSemester($cdstatus);
+                    $teacher->setEmail($mail);
+
+                    $teacher->save();
+                }
+                else {
+                    header('Location: index');
+                }
+            } else {
+                header('Location: index');
+            }
+        }
         $teachers = $teacher->retrieveAll();
 
         $this->template->addCSS('screen.css');
