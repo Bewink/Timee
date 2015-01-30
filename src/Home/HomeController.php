@@ -51,7 +51,7 @@ class HomeController extends Controller {
         }
     }
 
-    public function etudiantAction() {
+    public function studentAction() {
         $student = new Student();
 
         if($this->request->isPostData()) {
@@ -66,7 +66,6 @@ class HomeController extends Controller {
             AND Request::getPost('student_mail') != null) {
 
                 if(filter_var($_POST['student_mail'], FILTER_VALIDATE_EMAIL)){
-
                     $login = htmlentities($_POST['student_login']);
                     $pass = Utils::cryptPassword($_POST['student_pass']);
                     $lastname = htmlentities($_POST['student_lastname']);
@@ -88,8 +87,6 @@ class HomeController extends Controller {
                     $student->setEmail($mail);
 
                     $student->save();
-
-
                 }
                 else {
                     header('Location: index');
@@ -114,8 +111,7 @@ class HomeController extends Controller {
         }
     }
 
-    public function enseignantAction() {
-
+    public function teacherAction() {
         $teacher = new Teacher();
 
         if($this->request->isPostData()) {
@@ -164,7 +160,8 @@ class HomeController extends Controller {
             $this->template->render('login.html.twig');
         }
     }
-    public function parametresAction() {
+
+    public function parametersAction() {
         $this->template->addCSS('screen.css');
         $this->template->addJS('main.js', false);
 

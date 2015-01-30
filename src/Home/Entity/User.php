@@ -70,13 +70,13 @@ class User extends Entity {
 
                 $teacher = new Teacher();
 
-                $teacher->setNum($result['NUMSTUDENT']);
-                $teacher->setCdStatus($result['CDDUT']);
-                $teacher->setLogin($result['LOGINSTUDENT']);
-                $teacher->setPassword($result['PASSWORDSTUDENT']);
-                $teacher->setFirstname($result['FIRSTNAMESTUDENT']);
-                $teacher->setLastname($result['LASTNAMESTUDENT']);
-                $teacher->setEmail($result['EMAILSTUDENT']);
+                $teacher->setNum($result['NUMTEACHER']);
+                $teacher->setCdStatus($result['CDSTATUS']);
+                $teacher->setLogin($result['LOGINTEACHER']);
+                $teacher->setPassword($result['PASSWORDTEACHER']);
+                $teacher->setFirstname($result['FIRSTNAMETEACHER']);
+                $teacher->setLastname($result['LASTNAMETEACHER']);
+                $teacher->setEmail($result['EMAILTEACHER']);
 
                 return $teacher;
             } else {

@@ -11,17 +11,17 @@ $routes = array(
         'file' => 'Home/HomeController.php',
         'action' => 'index'
     ),
-    'etudiant' => array(
+    'student' => array(
         'file' => 'Home/HomeController.php',
-        'action' => 'etudiant'
+        'action' => 'student'
     ),
-    'enseignant' => array(
+    'teacher' => array(
         'file' => 'Home/HomeController.php',
-        'action' => 'enseignant'
+        'action' => 'teacher'
     ),
-    'parametres' => array(
+    'parameters' => array(
         'file' => 'Home/HomeController.php',
-        'action' => 'parametres'
+        'action' => 'parameters'
     ),
     'disconnect' => array(
         'file' => 'Home/HomeController.php',

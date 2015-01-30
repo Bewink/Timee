@@ -54,7 +54,6 @@ class Student extends User {
         $query = $this->db->prepare("SELECT * FROM student");
         $query->execute();
         if($query->rowCount() > 0) {
-
             $students = array();
 
             while($result = $query->fetch()){
@@ -82,8 +81,33 @@ class Student extends User {
     public function save() {
         if(Utils::getVar($this->num) == null) {
             $this->num = $this->generateUniqId();
-            $query = $this->db->prepare("INSERT INTO student(NUMSTUDENT, NUMTD, NUMTP, CDSEMESTER, CDDUT, LOGINSTUDENT, PASSWORDSTUDENT, FIRSTNAMESTUDENT, LASTNAMESTUDENT, EMAILSTUDENT)
-                                          VALUES(:id, :td, :tp, :semester, :dut, :login, :pass, :firstname, :lastname, :mail)");
+            $query = $this->db->prepare("
+                INSERT INTO
+                    student(
+                        NUMSTUDENT,
+                        NUMTD,
+                        NUMTP,
+                        CDSEMESTER,
+                        CDDUT,
+                        LOGINSTUDENT,
+                        PASSWORDSTUDENT,
+                        FIRSTNAMESTUDENT,
+                        LASTNAMESTUDENT,
+                        EMAILSTUDENT
+                    )
+                VALUES(
+                    :id,
+                    :td,
+                    :tp,
+                    :semester,
+                    :dut,
+                    :login,
+                    :pass,
+                    :firstname,
+                    :lastname,
+                    :mail
+                )
+            ");
             $query->execute(array(
                 'id' => $this->num,
                 'td' => $this->numTD,
@@ -97,9 +121,22 @@ class Student extends User {
                 'mail' => $this->email
             ));
         } else {
-            $query = $this->db->prepare("UPDATE student
-                                          SET NUMTD = :td, NUMTP = :tp, CDSEMESTER = :semester, CDDUT = :dut, LOGINSTUDENT = :login, PASSWORDSTUDENT = :pass, FIRSTNAMESTUDENT = :firstname, LASTNAMESTUDENT = :lastname, EMAILSTUDENT = :mail
-                                          WHERE NUMSTUDENT = :id");
+            $query = $this->db->prepare("
+                UPDATE
+                    student
+                SET
+                    NUMTD = :td,
+                    NUMTP = :tp,
+                    CDSEMESTER = :semester,
+                    CDDUT = :dut,
+                    LOGINSTUDENT = :login,
+                    PASSWORDSTUDENT = :pass,
+                    FIRSTNAMESTUDENT = :firstname,
+                    LASTNAMESTUDENT = :lastname,
+                    EMAILSTUDENT = :mail
+                WHERE
+                    NUMSTUDENT = :id
+            ");
             $query->execute(array(
                 'id' => $this->num,
                 'td' => $this->numTD,
