@@ -3,6 +3,7 @@
 namespace src\Home\Entity;
 
 use vendor\befew\Logger;
+use vendor\befew\Utils;
 
 /**
  * Class Student
@@ -75,6 +76,42 @@ class Student extends User {
         return $students;
         } else {
             return false;
+        }
+    }
+
+    public function save() {
+        if(Utils::getVar($this->num) == null) {
+            $this->num = $this->generateUniqId();
+            $query = $this->db->prepare("INSERT INTO student(NUMSTUDENT, NUMTD, NUMTP, CDSEMESTER, CDDUT, LOGINSTUDENT, PASSWORDSTUDENT, FIRSTNAMESTUDENT, LASTNAMESTUDENT, EMAILSTUDENT)
+                                          VALUES(:id, :td, :tp, :semester, :dut, :login, :pass, :firstname, :lastname, :mail");
+            $query->execute(array(
+                'id' => $this->num,
+                'td' => $this->numTD,
+                'tp' => $this->numTP,
+                'semester' => $this->cdSemester,
+                'dut' => $this->cdDUT,
+                'login' => $this->login,
+                'pass'  => $this->password,
+                'firstname' => $this->firstname,
+                'lastname' => $this->lastname,
+                'mail' => $this->email
+            ));
+        } else {
+            $query = $this->db->prepare("UPDATE student
+                                          SET NUMTD = :td, NUMTP = :tp, CDSEMESTER = :semester, CDDUT = :dut, LOGINSTUDENT = :login, PASSWORDSTUDENT = :pass, FIRSTNAMESTUDENT = :firstname, LASTNAMESTUDENT = :lastname, EMAILSTUDENT = :mail
+                                          WHERE NUMSTUDENT = :id");
+            $query->execute(array(
+                'id' => $this->num,
+                'td' => $this->numTD,
+                'tp' => $this->numTP,
+                'semester' => $this->cdSemester,
+                'dut' => $this->cdDUT,
+                'login' => $this->login,
+                'pass'  => $this->password,
+                'firstname' => $this->firstname,
+                'lastname' => $this->lastname,
+                'mail' => $this->email
+            ));
         }
     }
 }

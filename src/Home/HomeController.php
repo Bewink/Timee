@@ -7,6 +7,8 @@ use vendor\befew\Controller;
 use vendor\befew\Logger;
 use src\Home\Entity\User;
 use src\Home\Entity\Teacher;
+use vendor\befew\Request;
+use vendor\befew\Utils;
 
 /**
  * Class HomeController
@@ -50,15 +52,59 @@ class HomeController extends Controller {
     }
 
     public function etudiantAction() {
-
         $student = new Student();
+
+        if($this->request->isPostData()) {
+            if (Request::getPost('student_login') != null
+            AND Request::getPost('student_pass') != null
+            AND Request::getPost('student_lastname') != null
+            AND Request::getPost('student_firstname') != null
+            AND Request::getPost('student_dut') != null
+            AND Request::getPost('student_td') != null
+            AND Request::getPost('student_tp') != null
+            AND Request::getPost('student_sem') != null
+            AND Request::getPost('student_mail') != null) {
+
+                if(filter_var($_POST['student_mail'], FILTER_VALIDATE_EMAIL)){
+
+                    $login = htmlentities($_POST['student_login']);
+                    $pass = Utils::cryptPassword(htmlentities($_POST['student_pass']));
+                    $lastname = htmlentities($_POST['student_lastname']);
+                    $firstname = htmlentities($_POST['student_firstname']);
+                    $dut = htmlentities($_POST['student_dut']);
+                    $td = htmlentities($_POST['student_td']);
+                    $tp = htmlentities($_POST['student_tp']);
+                    $semester = htmlentities($_POST['student_sem']);
+                    $mail = htmlentities($_POST['student_mail']);
+
+                    $student->setLogin($login);
+                    $student->setPassword($pass);
+                    $student->setLastname($lastname);
+                    $student->setFirstname($firstname);
+                    $student->setCdDUT($dut);
+                    $student->setNumTD($td);
+                    $student->setNumTP($tp);
+                    $student->setCdSemester($semester);
+                    $student->setEmail($mail);
+
+
+                }
+            }
+        }
+
+
         $students = $student->retrieveAll();
 
         $this->template->addCSS('screen.css');
         $this->template->addJS('main.js', false);
-        $this->template->render('addStudent.html.twig', array(
-            'students' => $students
-        ));
+
+        if($this->request->isLoggedInUser()) {
+            $this->template->render('addStudent.html.twig', array(
+                'students' => $students
+            ));
+        } else {
+            $this->template->render('login.html.twig');
+        }
     }
 
     public function enseignantAction() {
@@ -68,14 +114,24 @@ class HomeController extends Controller {
 
         $this->template->addCSS('screen.css');
         $this->template->addJS('main.js', false);
-        $this->template->render('addTeacher.html.twig', array(
-            'teachers' => $teachers
-        ));
+
+        if($this->request->isLoggedInUser()) {
+            $this->template->render('addTeacher.html.twig', array(
+                'teachers' => $teachers
+            ));
+        } else {
+            $this->template->render('login.html.twig');
+        }
     }
     public function parametresAction() {
         $this->template->addCSS('screen.css');
         $this->template->addJS('main.js', false);
-        $this->template->render('parametres.html.twig');
+
+        if($this->request->isLoggedInUser()) {
+            $this->template->render('parametres.html.twig');
+        } else {
+            $this->template->render('login.html.twig');
+        }
     }
 
     public function disconnectAction() {
