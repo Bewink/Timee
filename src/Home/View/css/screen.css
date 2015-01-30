@@ -71,37 +71,50 @@ body {
 }
 
 /* line 9, ../sass/screen.scss */
+.alert {
+  text-align: center;
+}
+
+/* line 13, ../sass/screen.scss */
 .bold {
   font-weight: bold;
 }
 
-/* line 13, ../sass/screen.scss */
+/* line 17, ../sass/screen.scss */
 .planning-container {
   max-width: 960px;
   margin: auto;
 }
 
-/* line 18, ../sass/screen.scss */
+/* line 22, ../sass/screen.scss */
 .f-left {
   float: left;
 }
 
-/* line 22, ../sass/screen.scss */
+/* line 26, ../sass/screen.scss */
 .f-right {
   float: right;
 }
 
-/* line 26, ../sass/screen.scss */
+/* line 30, ../sass/screen.scss */
 h1 {
   font-size: 14px;
   font-weight: 400;
 }
 
 /* line 1, ../sass/_login.scss */
-.container-login {
-  height: 250px;
+.login {
+  height: 100%;
+  width: 100%;
+  background-color: #eeeeee;
+}
+/* line 6, ../sass/_login.scss */
+.login .container-login {
+  height: 200px;
   width: 160px;
+  padding: 20px;
   margin: auto;
+  background-color: #FFF;
   position: absolute;
   top: 0;
   right: 0;
@@ -109,27 +122,41 @@ h1 {
   left: 0;
   text-align: center;
 }
-/* line 12, ../sass/_login.scss */
-.container-login input {
+/* line 19, ../sass/_login.scss */
+.login .container-login h1 {
+  margin: 15px 0;
+}
+/* line 23, ../sass/_login.scss */
+.login .container-login input {
   border: 1px solid rgba(0, 0, 0, 0.3);
   padding: 5px;
   font-family: 'Source Code Pro';
+  margin: 5px 0;
 }
-/* line 18, ../sass/_login.scss */
-.container-login .submit input {
+/* line 30, ../sass/_login.scss */
+.login .container-login .submit input {
+  margin-top: 10px;
   background-color: #fff;
   border: none;
   text-transform: uppercase;
 }
-/* line 24, ../sass/_login.scss */
-.container-login .login-help {
+/* line 36, ../sass/_login.scss */
+.login .container-login .submit input:hover {
+  text-decoration: underline;
+}
+/* line 41, ../sass/_login.scss */
+.login .container-login .login-help {
+  margin-top: 10px;
   font-size: 10px;
+}
+/* line 45, ../sass/_login.scss */
+.login .container-login .login-help a {
   color: rgba(0, 0, 0, 0.3);
 }
 
 /* line 1, ../sass/_menu.scss */
 aside {
-  width: 240px;
+  width: 210px;
   height: 100%;
   position: absolute;
   left: -240px;
@@ -146,44 +173,71 @@ aside i {
   top: 30px;
   cursor: pointer;
 }
-/* line 19, ../sass/_menu.scss */
+/* line 18, ../sass/_menu.scss */
+aside i img {
+  height: 20px;
+  width: auto;
+}
+/* line 23, ../sass/_menu.scss */
+aside i .open-menu {
+  display: block;
+}
+/* line 27, ../sass/_menu.scss */
+aside i .close-menu {
+  display: none;
+}
+/* line 32, ../sass/_menu.scss */
 aside ul {
   margin-top: 0;
 }
-/* line 22, ../sass/_menu.scss */
+/* line 35, ../sass/_menu.scss */
 aside ul li {
   padding: 5px 10px;
-  margin: 5px 0;
+  margin: 5px 20px;
 }
-/* line 26, ../sass/_menu.scss */
+/* line 39, ../sass/_menu.scss */
 aside ul li a {
   display: inline-block;
   width: 100%;
   padding: 15px 0;
+  color: #000;
+  text-decoration: none;
 }
-/* line 33, ../sass/_menu.scss */
+/* line 48, ../sass/_menu.scss */
 aside ul .bold {
-  margin: 30px 0;
+  margin: 30px 20px;
 }
-/* line 37, ../sass/_menu.scss */
+/* line 52, ../sass/_menu.scss */
 aside ul .close-menu {
   position: absolute;
   right: 30px;
 }
-/* line 42, ../sass/_menu.scss */
+/* line 57, ../sass/_menu.scss */
 aside ul a:hover {
   text-decoration: underline;
 }
 
-/* line 48, ../sass/_menu.scss */
+/* line 63, ../sass/_menu.scss */
 .isActive {
   left: 0;
   background-color: rgba(255, 255, 255, 0.8);
 }
+/* line 67, ../sass/_menu.scss */
+.isActive i {
+  left: 160px;
+}
+/* line 70, ../sass/_menu.scss */
+.isActive i .open-menu {
+  display: none;
+}
+/* line 74, ../sass/_menu.scss */
+.isActive i .close-menu {
+  display: block;
+}
 
-/* line 53, ../sass/_menu.scss */
+/* line 80, ../sass/_menu.scss */
 .transition-all {
-  transition: all 0.35s ease-out;
+  transition: All 0.35s ease-out;
 }
 
 /* line 1, ../sass/_header.scss */

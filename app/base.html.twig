@@ -22,6 +22,7 @@
     <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 </head>
 <body>
+{% if isLoginPage != true %}
     <header>
         <div class="header-row">
             <div class="desc">
@@ -41,19 +42,19 @@
     <!-- Sidemenu -->
 
     <aside id="sideMenu" class="transition-all">
-        <i id="showMenu" class="close-menu transition-all">XXX</i>
+        <i id="showMenu" class="close-menu transition-all"><img class="open-menu" src="src/Home/View/img/burger-menu.png" alt="open menu"><img class="close-menu" src="src/Home/View/img/close-menu.png" alt="close menu"></i>
         <ul>
             <li class="bold">Menu</li>
             <li><a href="index">Planning</a></li>
             <li><a href="#">Profil</a></li>
             <li><a href="#">Editer</a></li>
-            <li><a href="etudiant">Etudiants</a></li>
-            <li><a href="enseignant">Enseignants</a></li>
+            <li><a href="student">Etudiants</a></li>
+            <li><a href="teacher">Enseignants</a></li>
             <li><a href="parameters">Parametres</a></li>
             <li><a href="disconnect">Deconnection</a></li>
         </ul>
     </aside>
-
+{% endif %}
     <div class="pop">
         {% for error in errors %}
             <p class="alert alert-error">

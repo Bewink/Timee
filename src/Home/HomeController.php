@@ -47,7 +47,9 @@ class HomeController extends Controller {
                 'lastname' => $_SESSION['lastname']
             ));
         } else {
-            $this->template->render('login.html.twig');
+            $this->template->render('login.html.twig', array(
+                'isLoginPage' => true
+            ));
         }
     }
 
@@ -107,7 +109,8 @@ class HomeController extends Controller {
                 'students' => $students
             ));
         } else {
-            $this->template->render('login.html.twig');
+            $this->template->render('login.html.twig', array(
+            ));
         }
     }
 
