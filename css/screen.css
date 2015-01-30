@@ -155,10 +155,18 @@ input:-ms-input-placeholder {
 }
 
 /* line 1, ../sass/_login.scss */
-.container-login {
-  height: 250px;
+.login {
+  height: 100%;
+  width: 100%;
+  background-color: #eeeeee;
+}
+/* line 6, ../sass/_login.scss */
+.login .container-login {
+  height: 200px;
   width: 160px;
+  padding: 20px;
   margin: auto;
+  background-color: #FFF;
   position: absolute;
   top: 0;
   right: 0;
@@ -166,26 +174,35 @@ input:-ms-input-placeholder {
   left: 0;
   text-align: center;
 }
-/* line 12, ../sass/_login.scss */
-.container-login h1 {
-  margin-bottom: 15px;
+/* line 19, ../sass/_login.scss */
+.login .container-login h1 {
+  margin: 15px 0;
 }
-/* line 16, ../sass/_login.scss */
-.container-login input {
+/* line 23, ../sass/_login.scss */
+.login .container-login input {
   border: 1px solid rgba(0, 0, 0, 0.3);
   padding: 5px;
   font-family: 'Source Code Pro';
   margin: 5px 0;
 }
-/* line 23, ../sass/_login.scss */
-.container-login .submit input {
+/* line 30, ../sass/_login.scss */
+.login .container-login .submit input {
+  margin-top: 10px;
   background-color: #fff;
   border: none;
   text-transform: uppercase;
 }
-/* line 29, ../sass/_login.scss */
-.container-login .login-help {
+/* line 36, ../sass/_login.scss */
+.login .container-login .submit input:hover {
+  text-decoration: underline;
+}
+/* line 41, ../sass/_login.scss */
+.login .container-login .login-help {
+  margin-top: 10px;
   font-size: 10px;
+}
+/* line 45, ../sass/_login.scss */
+.login .container-login .login-help a {
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -533,51 +550,52 @@ table .test3 {
 }
 /* line 76, ../sass/_addStudent.scss */
 .adding_form form .input_group {
+  float: left;
   display: inline-block;
-  margin-bottom: 10px;
+  margin-right: 10px;
   vertical-align: top;
 }
-/* line 80, ../sass/_addStudent.scss */
+/* line 81, ../sass/_addStudent.scss */
 .adding_form form .input_group label {
   display: none;
   margin-bottom: 5px;
   font-size: 11px;
   color: rgba(0, 0, 0, 0.3);
 }
-/* line 86, ../sass/_addStudent.scss */
+/* line 87, ../sass/_addStudent.scss */
 .adding_form form .input_group input {
   width: 100px;
 }
-/* line 89, ../sass/_addStudent.scss */
+/* line 90, ../sass/_addStudent.scss */
 .adding_form form .input_group #student_mail {
   width: auto;
 }
-/* line 92, ../sass/_addStudent.scss */
+/* line 93, ../sass/_addStudent.scss */
 .adding_form form .input_group #student_pass {
   width: auto;
 }
-/* line 95, ../sass/_addStudent.scss */
+/* line 96, ../sass/_addStudent.scss */
 .adding_form form .input_group #student_dut {
   width: auto;
 }
-/* line 98, ../sass/_addStudent.scss */
+/* line 99, ../sass/_addStudent.scss */
 .adding_form form .input_group select {
   width: auto;
 }
-/* line 102, ../sass/_addStudent.scss */
+/* line 103, ../sass/_addStudent.scss */
 .adding_form form .interact_buttons {
   display: inline-block;
+  float: right;
 }
-/* line 104, ../sass/_addStudent.scss */
+/* line 106, ../sass/_addStudent.scss */
 .adding_form form .interact_buttons input {
-  display: block;
   font-family: "Source Code Pro";
   font-size: 11px;
-  padding: 2px 35px 2px 35px;
+  padding: 2px 25px 2px 25px;
   background-color: #FFFFFF;
   border: 1px solid rgba(0, 0, 0, 0.3);
 }
-/* line 112, ../sass/_addStudent.scss */
+/* line 113, ../sass/_addStudent.scss */
 .adding_form form .interact_buttons input:first-of-type {
   margin-bottom: 10px;
 }

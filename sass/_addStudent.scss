@@ -74,8 +74,9 @@
     form{
         margin: auto;
         .input_group{
+            float: left;
             display: inline-block;
-            margin-bottom: 10px;
+            margin-right: 10px;
             vertical-align: top;
             label{
                 display: none;
@@ -101,11 +102,11 @@
         }
         .interact_buttons{
             display: inline-block;
+            float: right;
             input{
-                display: block;
                 font-family: "Source Code Pro";
                 font-size: 11px;
-                padding: 2px 35px 2px 35px;
+                padding: 2px 25px 2px 25px;
                 background-color: #FFFFFF;
                 border: 1px solid $primary-color;
             }

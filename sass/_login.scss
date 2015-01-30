@@ -1,33 +1,50 @@
-.container-login {
-    height: 250px;
-    width: 160px;
-    margin: auto;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    text-align: center;
+.login{
+    height: 100%;
+    width: 100%;
+    background-color: #eeeeee;
 
-    h1{
-        margin-bottom: 15px;
-    }
+    .container-login {
+        height: 200px;
+        width: 160px;
+        padding: 20px;
+        margin: auto;
+        background-color: #FFF;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        text-align: center;
 
-    input {
-        border: 1px solid $primary-color;
-        padding: 5px;
-        font-family: 'Source Code Pro';
-        margin: 5px 0;
-    }
+        h1{
+            margin: 15px 0;
+        }
 
-    .submit input {
-        background-color: #fff;
-        border: none;
-        text-transform: uppercase;
-    }
+        input {
+            border: 1px solid $primary-color;
+            padding: 5px;
+            font-family: 'Source Code Pro';
+            margin: 5px 0;
+        }
 
-    .login-help {
-        font-size: 10px;
-        color: $primary-color;
+        .submit input {
+            margin-top: 10px;
+            background-color: #fff;
+            border: none;
+            text-transform: uppercase;
+
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+
+        .login-help {
+            margin-top: 10px;
+            font-size: 10px;
+
+            a{
+                color: $primary-color;
+            }
+        }
     }
 }
