@@ -191,7 +191,7 @@ input:-ms-input-placeholder {
 
 /* line 1, ../sass/_menu.scss */
 aside {
-  width: 240px;
+  width: 210px;
   height: 100%;
   position: absolute;
   left: -240px;
@@ -259,7 +259,7 @@ aside ul a:hover {
 }
 /* line 67, ../sass/_menu.scss */
 .isActive i {
-  left: 180px;
+  left: 160px;
 }
 /* line 70, ../sass/_menu.scss */
 .isActive i .open-menu {
