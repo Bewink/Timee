@@ -113,5 +113,7 @@ class Student extends User {
                 'mail' => $this->email
             ));
         }
+
+        return true;
     }
 }

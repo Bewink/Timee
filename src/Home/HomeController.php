@@ -68,7 +68,7 @@ class HomeController extends Controller {
                 if(filter_var($_POST['student_mail'], FILTER_VALIDATE_EMAIL)){
 
                     $login = htmlentities($_POST['student_login']);
-                    $pass = Utils::cryptPassword(htmlentities($_POST['student_pass']));
+                    $pass = Utils::cryptPassword($_POST['student_pass']);
                     $lastname = htmlentities($_POST['student_lastname']);
                     $firstname = htmlentities($_POST['student_firstname']);
                     $dut = htmlentities($_POST['student_dut']);
@@ -89,6 +89,11 @@ class HomeController extends Controller {
 
 
                 }
+                else {
+                    header('Location: index');
+                }
+            } else {
+                header('Location: index');
             }
         }
 
